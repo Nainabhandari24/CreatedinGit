@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1080 1080">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #c5dbff;
+      }
+
+      .cls-15, .cls-3, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.7;
+        mix-blend-mode: soft-light;
+      }
+
+      .cls-5 {
+        font-size: 72px;
+        font-family: UtopiaStd-BlackHeadline, Utopia Std;
+        font-weight: 800;
+        letter-spacing: 0.03em;
+      }
+
+      .cls-6 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-7 {
+        letter-spacing: 0.06em;
+      }
+
+      .cls-8 {
+        letter-spacing: 0.03em;
+      }
+
+      .cls-9 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-10 {
+        letter-spacing: 0.04em;
+      }
+
+      .cls-11, .cls-19 {
+        font-size: 24px;
+      }
+
+      .cls-11 {
+        font-family: SourceSansPro-Light, Source Sans Pro;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-12 {
+        letter-spacing: 0.09em;
+      }
+
+      .cls-13 {
+        letter-spacing: 0.1em;
+      }
+
+      .cls-14 {
+        letter-spacing: 0.06em;
+      }
+
+      .cls-15 {
+        font-size: 18px;
+        font-family: SourceSansPro-Bold, Source Sans Pro;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-16 {
+        letter-spacing: 0.09em;
+      }
+
+      .cls-17 {
+        letter-spacing: 0.1em;
+      }
+
+      .cls-18 {
+        letter-spacing: 0.06em;
+      }
+
+      .cls-19 {
+        font-family: ACaslonPro-SemiboldItalic, Adobe Caslon Pro;
+        font-weight: 600;
+        font-style: italic;
+        letter-spacing: 0.05em;
+      }
+
+      .cls-20 {
+        letter-spacing: 0.01em;
+      }
+
+      .cls-21 {
+        letter-spacing: -0.01em;
+      }
+
+      .cls-22 {
+        letter-spacing: 0.05em;
+      }
+
+      .cls-23 {
+        letter-spacing: 0.02em;
+      }
+
+      .cls-24 {
+        letter-spacing: 0.03em;
+      }
+    </style>
+  </defs>
+  <title>51011c4b-34ec-4c5b-bc95-d898ec144fbc</title>
+  <g class="cls-1">
+    <g id="Placeholders">
+      <rect id="_YOUR_IMAGE_HERE_" data-name="[YOUR IMAGE HERE]" class="cls-2" x="50" y="51" width="310" height="979"/>
+      <rect id="_YOUR_IMAGE_HERE_2" data-name="[YOUR IMAGE HERE]" class="cls-2" x="720" y="51" width="310" height="979"/>
+      <rect id="_YOUR_IMAGE_HERE_3" data-name="[YOUR IMAGE HERE]" class="cls-2" x="385" y="51" width="310" height="979"/>
+    </g>
+    <g id="Soft_Light_Effect" data-name="Soft Light Effect">
+      <rect class="cls-3" y="540" width="1080" height="540"/>
+    </g>
+    <g id="Design_Elements" data-name="Design Elements">
+      <rect class="cls-4" x="290" y="290" width="500" height="500"/>
+    </g>
+    <g id="Text">
+      <text class="cls-5" transform="translate(336.8 475.9)">M<tspan class="cls-6" x="63.2" y="0">al</tspan><tspan class="cls-7" x="137.3" y="0">e</tspan><tspan class="cls-6" x="181.7" y="0">suada</tspan><tspan class="cls-8"><tspan x="81.1" y="72">S</tspan><tspan class="cls-6" x="121.2" y="72">it </tspan><tspan class="cls-9" x="195.2" y="72">E</tspan><tspan class="cls-6" x="242.3" y="72">lit</tspan></tspan><tspan class="cls-10"><tspan x="66.5" y="144">N</tspan><tspan class="cls-6" x="116.6" y="144">ullam</tspan></tspan></text>
+      <text class="cls-11" transform="translate(383.4 355.4)">I<tspan class="cls-12" x="8.2" y="0">P</tspan><tspan class="cls-13" x="23.5" y="0">SUM AENEAN VENEN</tspan><tspan class="cls-14" x="263.7" y="0">A</tspan><tspan class="cls-13" x="277.7" y="0">TIS</tspan></text>
+      <text class="cls-15" transform="translate(473.4 1005)">E<tspan class="cls-16" x="11.7" y="0">X</tspan><tspan class="cls-17" x="23.6" y="0">AMPLE.</tspan><tspan class="cls-18" x="93.7" y="0">C</tspan><tspan class="cls-17" x="105.3" y="0">OM</tspan></text>
+      <text class="cls-19" transform="translate(452.8 714.3)">+ 5 Ligula<tspan class="cls-20" x="108.4" y="0"> </tspan><tspan class="cls-21" x="113.3" y="0">T</tspan><tspan class="cls-22" x="128.9" y="0">e</tspan><tspan x="138.8" y="0">llus</tspan><tspan x="-23.9" y="26">Aenean </tspan><tspan class="cls-23" x="59.3" y="26">F</tspan><tspan x="74.9" y="26">usce E</tspan><tspan class="cls-22" x="139.2" y="26">g</tspan><tspan x="151.1" y="26">es</tspan><tspan class="cls-24" x="169.8" y="26">t</tspan><tspan x="178.3" y="26">as</tspan></text>
+    </g>
+  </g>
+</svg>

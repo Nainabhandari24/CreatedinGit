@@ -1,0 +1,669 @@
+
+<!DOCTYPE html> <!--[if IE 6]><html
+id="ie6" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]--> <!--[if IE 7]><html
+id="ie7" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]--> <!--[if IE 8]><html
+id="ie8" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <![endif]--> <!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!--><html
+xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" lang="en-US"> <!--<![endif]--><head><link
+rel='stylesheet' href='http://addyosmani.com/blog/wp-content/plugins/wp-minify/min/?f=wp-content/themes/ao4/style.css,wp-content/plugins/wp-markdown/css/markdown-editor.css,wp-content/plugins/wp-markdown/css/prettify.css,wp-content/plugins/wp-pagenavi/pagenavi-css.css,wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCore.css,wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shCoreMidnight.css,wp-content/plugins/wp-syntaxhighlighter/syntaxhighlighter3/styles/shThemeMidnight.css,wp-content/plugins/wp-syntax/wp-syntax.css&amp;b=blog&amp;m=1377529402' type='text/css' media='screen' /><meta
+charset="UTF-8" /><meta
+name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"><title>Building Large-Scale jQuery Applications</title><link
+rel="profile" href="http://gmpg.org/xfn/11" /><style>@font-face {
+        font-family: 'MuseoSans';
+        src: url('http://addyosmani.com/img/fonts/MuseoSans_500-webfont.eot');
+        src: url('http://addyosmani.com/img/fonts/MuseoSans_500-webfont.eot?iefix') format('eot'),
+             url('http://addyosmani.com/img/fonts/MuseoSans_500-webfont.woff') format('woff'),
+             url('http://addyosmani.com/img/fonts/MuseoSans_500-webfont.ttf') format('truetype'),
+             url('http://addyosmani.com/img/fonts/MuseoSans_500-webfont.svg#webfont') format('svg');
+    }</style><link
+rel="stylesheet" type="text/css" media="print" href="http://addyosmani.com/blog/wp-content/themes/ao4/print.css" /><link
+rel="apple-touch-icon" href="http://addyosmani.com/512x512.png"><link
+rel=apple-touch-icon-precomposed href="http://addyosmani.com/512x512.png"><link
+rel=icon type=image/png href="http://addyosmani.com/512x512.png"> <!--[if IE]><link
+rel="shortcut icon" href="http://addyosmani.com/32x32.ico"><![endif]--><meta
+name="msapplication-TileColor" content="#D83434"><meta
+name="msapplication-TileImage" content="http://addyosmani.com/64x64.png"><link
+rel="pingback" href="http://addyosmani.com/blog/xmlrpc.php" /><!--[if lt IE 9]> <script src="http://addyosmani.com/blog/wp-content/themes/ao4/js/html5.js" type="text/javascript"></script> <![endif]--><link
+rel="alternate" type="application/rss+xml" title="AddyOsmani.com | Articles for developers &raquo; Feed" href="http://addyosmani.com/blog/feed/" /><link
+rel="alternate" type="application/rss+xml" title="AddyOsmani.com | Articles for developers &raquo; Comments Feed" href="http://addyosmani.com/blog/comments/feed/" /><link
+rel="alternate" type="application/rss+xml" title="AddyOsmani.com | Articles for developers &raquo; Building Large-Scale jQuery Applications Comments Feed" href="http://addyosmani.com/blog/large-scale-jquery/feed/" /> <script type='text/javascript' src='http://www.instapaper.com/javascript/embed2.js?ver=1.2'></script> <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=1.6.2'></script> <script type='text/javascript' src='https://apis.google.com/js/plusone.js?ver=3.2'></script> <script type='text/javascript' src='http://addyosmani.com/blog/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script> <script type='text/javascript' src='http://addyosmani.com/blog/wp-content/themes/ao4/js/custom.js?ver=1.0'></script> <script type='text/javascript' src='http://addyosmani.com/blog/wp-content/plugins/wp-markdown/js/prettify.js?ver=1.3'></script> <link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://addyosmani.com/blog/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://addyosmani.com/blog/wp-includes/wlwmanifest.xml" /><link
+rel='prev' title='JavaScript 101 &#8211; A Free 10 Hour Audio Course On JavaScript Fundamentals' href='http://addyosmani.com/blog/javascript-101-free-course/' /><link
+rel='next' title='Spotlight &#8211; Recommend Node.js Projects For January' href='http://addyosmani.com/blog/spotlight-issue1/' /><meta
+name="generator" content="WordPress 3.5.2" /><link
+rel='shortlink' href='http://wp.me/pE25e-xn' /><meta
+name="description" content="Today we&#39;re going to look at the end-to-end tools and options you have for building large-scale enterprise jQuery applications. Although jQuery is an" /><link
+rel="canonical" href="http://addyosmani.com/blog/large-scale-jquery/" /><meta
+property="og:site_name" content="AddyOsmani.com | Articles for developers"/><meta
+property="og:url" content="http://addyosmani.com/blog/large-scale-jquery/"/><meta
+property="og:title" content="Building Large-Scale jQuery Applications" /><style type="text/css">.read_later {
+		float: left;
+margin: -2px 0px 10px 10px;
+padding-right: 9px;
+		}</style> <script type="text/javascript">/*  */
+jQuery.ajax({type:'GET',url:'http://addyosmani.com/blog/wp-content/plugins/wp-postviews/wp-postviews.php',data:'postviews_id=2069',cache:false});/*  */</script> <style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style></head><body
+class="single single-post postid-2069 single-format-standard two-column content-sidebar"> <header
+id="header"><div
+id="branding" class="clearfix"> <hgroup
+id="site-title"> <a
+href="http://addyosmani.com/blog/" class="logo"><img
+src="http://addyosmani.com/blog/wp-content/uploads/2013/08/articles.jpg" alt="AddyOsmani.com | Articles for developers" title="AddyOsmani.com | Articles for developers" /></a> </hgroup></div> </header><div
+id="page" class="clearfix"><div
+id="main" class="clearfix"><div
+id="content"> <article
+id="post-2069" class="post-2069 post type-post status-publish format-standard hentry category-web-development tag-applications tag-build-script tag-building tag-compression tag-concatenation tag-enterprise-applications tag-enterprise-jquery tag-enterprise-level-jquery tag-javascriptmvc tag-jquery tag-jquery-applications tag-jquery-large-scale tag-large tag-large-jquery-apps tag-large-scale-jquery tag-minification tag-mvc tag-mvc-with-jquery"><div
+class="entry-wrap"><div
+class="post-type"> <a
+href="http://addyosmani.com/blog/large-scale-jquery/" class="post-format"><img
+src="http://addyosmani.com/blog/wp-content/themes/ao4/images/postformat-icons/format-standard.png" alt="permalink" title="Permalink" /></a><p
+class="post-comments"><a
+href="http://addyosmani.com/blog/large-scale-jquery/#comments" class="comments-link"  title="Comment on Building Large-Scale jQuery Applications">102</a></p></div> <header
+class="entry-header"><h1 class="entry-title"><a
+href="http://addyosmani.com/blog/large-scale-jquery/" title="Permalink to Building Large-Scale jQuery Applications" rel="bookmark">Building Large-Scale jQuery Applications</a></h1><div
+class="sharebar"><div
+class="shareright"><div
+class="topsy_widget_data" id="topsy_id0-0-3-0-0-3-12-1"> <iframe
+src="http://platform.twitter.com/widgets/tweet_button.html#_=1323381243687&amp;_version=2&amp;count=horizontal&amp;amp;enableNewSizing=false&amp;id=twitter-widget-0&amp;amp;lang=en&amp;original_referer=http%3A%2F%2Faddyosmani.com%2Fblog%2F&amp;size=m&amp;text=Building Large-Scale jQuery Applications&amp;url=http://addyosmani.com/blog/large-scale-jquery/" allowtransparency="true" frameborder="0" scrolling="no" class="twitter-share-button twitter-count-horizontal" style="width: 110px; height: 20px; " title="Twitter Tweet Button"></iframe><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></div></div><div
+class="shareleft"> <g:plusone size="small" annotation="none" href="http://addyosmani.com/blog/large-scale-jquery/"></g:plusone> <script type="text/javascript">(function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();</script> </div> </header><div
+class="entry-content"><p><a
+href="http://addyosmani.com/blog/large-scale-jquery/"><img
+alt="" border="0" height="342" src="http://addyosmani.com/blog/wp-content/uploads/jqueryapps.jpg" width="530" /></a></p><p>Today we&#39;re going to look at the end-to-end tools and options you have for building large-scale enterprise jQuery applications. Although jQuery is an excellent JavaScript library and provides a well-designed set of tools for development, it&#39;s focus on staying compact and making the DOM easy to use has meant that it doesn&#39;t provide a significant infrastructure for building large-scale apps.</p><p>jQuery does however normalize things across browsers and serves as a great way of doing DOM manipulation. Using it to it&#39;s strengths, you can select some excellent tools to use along-side it as a toolkit for your larger-scale app development.</p><p><span
+id="more-2069"></span></p><p>Some developers have argued in the past that building RIAs using Dojo, MooTools or YUI may be more suitable for large-scale JavaScript applications than simply opting for jQuery, however, I believe you can implement a solution using it that is equally as good without too much extra effort.</p><p>In this post we&#39;ll be looking at ways you can put together a toolkit for large-scale jQuery application development by identifying the options you have available at the moment for dependency management, MVC with jQuery, templating, testing, minification and more.</p><h2><span
+style=" ">1. Dependency Management</span></h2><p>When writing large-scale jQuery applications, there may be script dependencies which you would prefer to load within a specific order or dynamically depending on their need (for a very basic example, you may wish to load functions.js before loading app.js if it relies on it) &#8211; a script loader can assist with this process. Although the traditional technique of just using hierarchially-organized script tags is equally as valid, script loaders nowadays come with a few extra features which you may find helpful, eg. loading different scripts depending on the features a browser supports or as mentioned, dynamically depending on some condition or need.</p><p>The two most dominant script loaders on the market at the moment are RequireJS (by James Burke) and LabJS (by Kyle Simpson). For quite some time there was a view that one of these had to be better than the other, but in truth, they both have their own strengths. In my experience, one of Require&#39;s best features is it&#39;s support of structured &#39;modules&#39; for your code whilst LabJS is best for when you don&#39;t need that extra feature and would prefer something more lightweight.</p><p>If you would like to read up more on whether to use Require or LabJS for your project, check out <a
+href="http://bit.ly/hzAIMJ">this</a> post. For the purpose of saving you time, I&#39;ve also included a few other options for dependancy management if these two don&#39;t quite meet your requirements.</p><p><strong>Options:</strong></p><ul><li><span><strong>RequireJS</strong> &#8211; I recommend using this if you plan on keeping your code more modular. Modules attempt to limit their impact on the global namespace and be more explicit about mentioning their immediate dependencies.&nbsp;RequireJS also comes with an optimization tool that allows you to combine and group your scripts into a smaller set of minified scripts that load quickly -&nbsp;</span><a
+href="http://requirejs.org/docs/jquery.html"><span>http://requirejs.org/docs/jquery.html</span></a></li><li><span><strong>LabJS</strong> &#8211; this works best where scripts need to efficiently loaded in a particular order and you&#39;re looking for a more lightweight solution than RequireJS or aren&#39;t as interested in a modular approach to dependancy management &#8211; </span><a
+href="http://labjs.com"><span>http://www.labjs.com</span></a><span>&nbsp;(and checkout&nbsp;YepNope JS, an excellent conditional loader that works on top of LabJS by Alex Sexton -&nbsp;</span><a
+href="http://yepnopejs.com"><span>http://www.yepnopejs.com</span></a><span>).</span></li><li><span><strong>StealJS</strong> &#8211; another excellent dependancy management tool. Steal is a part of the JavaScriptMVC package but you can get it as it&#39;s own individual package for use. Also includes concatenation, compression and code cleaning.&nbsp;</span><a
+href="http://jupiterjs.com/news/stealjs-script-manager"><span>http://jupiterjs.com/news/stealjs-script-manager</span></a></li><li><span><strong>JSL Script Loader</strong> &#8211; yet another decent contenter which supports lazy lading, ordered loading, duplicate source prevention and caching. Perhaps not as extensively tested as LabJS or Require &#8211; &nbsp;</span><a
+href="http://www.andresvidal.com/jsl"><span>http://www.andresvidal.com/jsl</span></a></li><li><span><strong>Bootstrap </strong>- a less feature-rich option than the others, but gets the job done. Best option if you&#39;re looking for a very minimal solution without any of the frills&nbsp;</span><a
+href="https://bitbucket.org/scott_koon/bootstrap"><span>https://bitbucket.org/scott_koon/bootstrap</span></a></li></ul><p>&nbsp;</p><h2><span
+style=" ">2. MVC </span>&amp; Organization For Large-Scale jQuery Applications</h2><p>Design patterns and Architectural patterns allow you to create re-usable, structured and more organized pieces of code based on existing tried and tested patterns in software engineering. Using a design pattern across your application is something I consider necessary especially when trying to ensure the coding style and structure is consistent when teams are involved in writing the app and not just a single person.</p><p>Quite often in modern web application development, the MVC (model-view-controller) pattern is employed for this purpose, however there exist several other popular patterns which you may find equally as useful if you feel MVC is not for you.</p><p>Below I&#39;m going to take you through some of the MVC solutions for jQuery and JavaScript which I would recommend, however if you would like to read up some more on JS design patterns to decide on which best fits your needs, feel free to check out my free book on this topic <a
+href="http://addyosmani.com/blog/essentialjsdesignpatterns/">here</a> for more options.</p><h3><span
+style=" ">MVC With JavaScript &amp; jQuery</span></h3><p>MVC is an architectural pattern quite often used on the server-side when creating web applications (eg. using Rails, Python, ASP.net or PHP). With this in mind, a few JavaScript developers are split as to whether jQuery-based applications need to be segmented into similar Model-View-Controller structures, or, whether they would be better suited to simply existing as more basic modular code instead.</p><p>The argument is that a clean MVC-strutured server-side codebase should suffice whilst others believe that as the complexity and scale of jQuery applications increases, especially at an enterprise level, we need a pattern like MVC in place. I agree with this latter viewpoint, although depending on the use case other patterns may be equally as useful here.</p><p>This section is directed at assisting those who have already decided they would <em>benefit</em> from using&nbsp;MVC with jQuery.</p><p><strong>How does the MVC Pattern work?</strong></p><p>Traditionally with MVC, you separate objects into three main categories (or concerns) when coding up your application. My interpretation of these categories is as follows:</p><p><strong>Model</strong> &#8211; the models in your application represent knowledge and data. For example: get methods and set methods fall under this umbrella. The models are isolated and know nothing about the View nor the Controller.</p><p><strong>View</strong> &#8211; views, from a web app perspective, can be considered the UI. They are generally dumb and don&#39;t necessarily need to perform validation logic ie. they always forward the input via a callback system. Views are isolated and know nothing about the Model nor the Controller.</p><p><strong>Controller</strong> &#8211; the controller sits right between the Model and the View. It performs any necessary business logic / data manipulation needed to get the data from the model to the view. The controllers do most of the validation that come back from the view and are aware of both the View and the Model.</p><h3>Why I Recommend Using JavaScriptMVC For This</h3><p>JavaScriptMVC has received quite a few positive reviews and is currently considered by some as the most comprehensive framework for large-scale jQuery application development available at the moment. This is a view shared by myself and a few other colleagues who have tackled larger-scale JavaScript app development in the past.</p><p> That said, if you are used to building web applications using traditional conventions (ie. heavier on the server-side, lighter on the client-side), you may find JMVC&rsquo;s approach to development something which requires a small change in mindset.</p><p> For example, if a large portion of your app is JavaScript-based, keeping it modular, organized, tested and clean probably requires the use of a rolled toolkit and that&rsquo;s just one of the things you get with JMVC. Most developers are probably used to catering for these things for their server-side code but the time has come for this to be considered for client-side code too.</p><p> Speaking with Justin Meyer from the JMVC project, perhaps the biggest confusion that he sees newcomers to it have is that they misunderstand exactly what the project really has to offer. In this segment of the post I would like to help clarify this.</p><p> JMVC can really be considered two things &#8211; both integrated development tools and a repeatable MVC architecture. The benefit of JMVC is that it provides a clear path to adding functionality and does a lot of the things you should be doing on your project quite easily.</p><p> First, the MVC part of JavaScriptMVC stands for the following:</p><ul><li>Model &#8211; A way to package and organize Ajax requests and service data</li><li>Controller &#8211; A jQuery widget generator</li><li>View &#8211; Client side templates</li></ul><p>Next, in terms of the integrated development tools that the project offers, you get the following (and more) included. While these are hardly what you would consider ground-breaking, the clean integration of such features means that you don&rsquo;t have to roll your own toolkit to handle them.</p><ul><li>Dependency management, production builds (with Less and CoffeeScript)</li><li>Automated unit and functional testing</li><li>Documentation</li></ul><p>There are some that have commented on JMVC being &lsquo;overkill&rsquo; as a solution. I would really only agree with this where the app you&rsquo;re creating only uses a minimal amount of JavaScript or is compact enough that it may not benefit from using a managed toolkit.</p><p> For all other cases such as working with a larger-scale application, JMVC offers more than enough advantages to warrant evaluating it for your projects.</p><p>For the purpose of being extensive, I&#39;m including a number of other options for adding MVC to your projects if you would like an alternative to JMVC.</p><p><strong>Update May 1st, 2011: </strong>Justin Meyer tells me that JMVC have just released a brand new community site where you can find links to all of the new/recent articles about it. Check it out over here: <a
+href="http://community.javascriptmvc.com/">http://community.javascriptmvc.com/</a></p><p><strong>Options:</strong></p><p><span
+style=" "><span
+id="internal-source-marker_0.7091932785697281" style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">JavaScriptMVC *(Recommended)</span></span><span
+style=" "><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Mature MVC solution which includes testing, dependency management, build tools, client side templates. Perfect for large applications where an all-in-one solution for organizing and building code is required. Most recently used by Grooveshark in their app re-write.</span><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Video Preview: </span></span><span
+style=" "><a
+href="http://cdn.javascriptmvc.com/videos/2_0/2_0_demo.htm"><span
+style=" background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://cdn.javascriptmvc.com/videos/2_0/2_0_demo.htm</span></a><br
+/> <em><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Demos and download:</span><br
+/> </em> </span><span
+style=" "><a
+href="http://www.javascriptmvc.com/#&amp;who=getcode"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://www.javascriptmvc.com/#&amp;who=getcode</span></a><br
+/> </span><span
+style=" "><a
+href="https://github.com/jupiterjs/srchr"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">https://github.com/jupiterjs/srchr</span></a><br
+/> <span
+style="font-size: small; "></p><p> </span><span
+style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Backbone</span><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; "> </span></span><span
+style=" "><span
+style="font-size: small; "><br
+/> </span><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Excellent for a DIY MVC Solution where you select the additional components you feel work best for your project. Backbone provides the &lsquo;backbone&rsquo; you need to organize your code using the MVC pattern (but bare in mind that here the C in MVC stands for Collections and not Controllers). It&#39;s great because it basically a provides a small framework ?(~2Kb) that provides the core pieces of KVO bindings.</span><span
+style="font-size: small; "></p><p> </span><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Demos and download:</span><br
+/> </span><span
+style=" "><a
+href="http://documentcloud.github.com/backbone/"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://documentcloud.github.com/backbone/</span></a><br
+/> </span><span
+style=" "><a
+href="http://ryandotsmith.heroku.com/2010/10/a-backbone-js-demo-app-sinatra-backend.html"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://ryandotsmith.heroku.com/2010/10/a-backbone-js-demo-app-sinatra-backend.html</span></a><br
+/> </span><span
+style=" "><a
+href="http://documentcloud.github.com/backbone/docs/todos.html"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://documentcloud.github.com/backbone/docs/todos.html</span></a><br
+/> </span><span
+style=" "><span
+style=" "><a
+href="http://bennolan.com/2010/11/24/backbone-jquery-demo.html"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://bennolan.com/2010/11/24/backbone-jquery-demo.html</span></a><span
+style="font-size: small; "></p><p> </span><span
+style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">SproutCore</span></span></span><span
+style=" "><span
+style="font-size: small; "><br
+/> </span><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">As it runs in the browser, SproutCore extends MVC to include a server interface, a display that &#39;paints&#39; your interface and responders for controlling application state. Yeduha Katz who is heavily involved in the project is also working on adding modularity to SC and this option should also be available soon. Recommended for applications wishing to have a desktop-like &lsquo;richness&rsquo;. Considered overkill for smaller-sized apps. Used by Apple amongst others.</span><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Video preview: </span></span><span
+style=" "><a
+href="http://vimeo.com/16774060"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://vimeo.com/16774060</span></a><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Demos and download:</span><br
+/> </span><span
+style=" "><a
+href="http://wiki.sproutcore.com/w/page/12412938/Hello-World-Tutorial"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://wiki.sproutcore.com/w/page/12412938/Hello-World-Tutorial</span></a><br
+/> </span><span
+style=" "><span
+style=" "><a
+href="http://www.sproutcore.com/get-started/"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://www.sproutcore.com/get-started/</span></a></span></span><span
+style=" "><span
+style=" "><span
+style="font-size: small; "></p><p> </span><span
+style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Knockout JS </span></span></span><span
+style=" "><span
+style="font-size: small; "><br
+/> </span><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Uses MVVM (which can be considered as MVC with declarative syntax). It&#39;s very much catered to those using JavaScript for user interfaces but does also provide dependency management, templating and works well with jQuery. May require a learning curve to get around the heavy use of data-binding.</span><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Demos and download:</span><br
+/> </span><span
+style=" "><a
+href="http://knockoutjs.com/documentation/introduction.htm"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://knockoutjs.com/documentation/introduction.htm</span></a><br
+/> </span><span
+style=" "><span
+style=" "><a
+href="http://knockoutjs.com/examples/"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://knockoutjs.com/examples/</span></a><span
+style="font-size: small; "></p><p> </span><span
+style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Eyeballs JS</span></span></span><span
+style=" "><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">An MVC framework by Paul Campbell who is well known for his involvement with Ruby. Eyeballs works with many libraries but provides a layer of features for organising your code &#8211; it aims to be both agnostic and modular. About on par with Backbone. A trivial note but it&#39;s initialization function (o_O()) may be a offputting to some. Above all, Eyeballs has quite a familiar feeling if you&#39;re a Ruby developer and I would recommend checking it out if you primarily use Ruby for building the server-side code to your web applications.</span><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Demos and download:</span><br
+/> </span><span
+style=" "><span
+style=" "><a
+href="https://github.com/paulca/eyeballs.js"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">https://github.com/paulca/eyeballs.js</span></a></span></span></p><p><span
+style=" "><span
+style=" "><span
+style="font-size: small; "><strong>Sammy JS</strong><br
+/> Sammy.js is a lightweight jQuery plugin which allows you to easily define &#39;route&#39; based applications. Where the C in MVC stands for Controller, some would consider Sammy.js the best controller framework out there but it doesn&#39;t exactly provide the Model and View aspects itself. Sammy is still worth checking out for single page JS apps requiring a level of organization.<br
+/> Demos and download:<br
+/> <a
+href="https://github.com/quirkey/sammy">https://github.com/quirkey/sammy</a></p><p> </span><span
+style="  background-color: transparent; font-weight: bold; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Choco</span></span></span><span
+style=" "><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">A decent looking MVC solution but needs some polish. Based on Sammy and JS-Model but comes with clean support for generators and is easily extensible.</span><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Video Preview: </span></span><span
+style=" "><span
+style=" "><a
+href="http://www.2dconcept.com/images/choco.mov"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">http://www.2dconcept.com/images/choco.mov</span></a><br
+/> <span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: none; vertical-align: baseline; white-space: pre-wrap; ">Get: </span></span></span><span
+style=" "> </span><a
+href="https://github.com/ahe/choco"><span
+style="  background-color: transparent; font-weight: normal; font-style: normal; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap; ">https://github.com/ahe/choco</span></a></p><p><b><br
+/> </b></p><p><strong>Additional pattern resources for large-scale jQuery applications:</strong></p><ul><li>John Resig&#39;s <a
+href="http://ejohn.org/blog/simple-javascript-inheritance/">Simple Inheritence</a></li><li><a
+href="http://alexsexton.com/?p=51">Using Inheritence Patterns To Organize Large jQuery Apps</a> with Alex Sexton</li><li><a
+href="http://ajaxian.com/archives/show-love-to-the-object-literal">The Object Literal pattern</a> recommended by Rebecca Murphy</li></ul><h2>3. Templating</h2><p><span
+style=" ">Templating has become a hot-topic recently in the world of JavaScript and for a very good reason &#8211; it can make it significantly easier to define a &#39;template&#39; for data you are outputting to the browser that is substantially cleaner and more readable than simply using something such as traditional string concatanation inside an array iterating over your data object.</span></p><p><span
+style=" ">What are templates? Well, basically client-side templates contain mark-up with binding expressions where the template can be applied to data objects or arrays and is rendered into the HTML DOM.</span> There are quite a few options available for using templating in your jQuery or JavaScript application, but in quite a few cases, the syntax used to define your templates doesn&#39;t hugely differ.</p><p>The following are popular options for templating with JavaScript. I have personally found both jQuery-tmpl and Mustache the most useful in my own projects, however once again for those who feel these are overkill options, I&#39;ve listed alternatives that you can evaluate as per your needs as well.</p><ul><li>jQuery-tmpl <a
+href="http://github.com/jquery/jquery-tmpl">http://github.com/jquery/jquery-tmpl</a> (tutorial video <a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-an-introduction-to-jquery-templating/">here</a>)</li><li>Mustache.js <a
+href="https://github.com/janl/mustache.js">https://github.com/janl/mustache.js</a> (tutorial video <a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/quick-tip-using-the-mustache-template-library/">here</a>)</li><li>Dust.js (one of Alex&#39;s recommendations) -&nbsp;<a
+href="http://akdubya.github.com/dustjs/">http://akdubya.github.com/dustjs/</a></li><li>Handlebars by Yehuda Katz (an extension to Mustache) -&nbsp;<a
+href="https://github.com/wycats/handlebars.js">https://github.com/wycats/handlebars.js</a>&nbsp;(I&#39;m warming up to this option)</li><li>jQote <a
+href="http://aefxx.com/jquery-plugins/jqote/">http://aefxx.com/jquery-plugins/jqote/</a></li><li>PURE <a
+href="http://beebole.com/pure/">http://beebole.com/pure</a></li><li>Nano <a
+href="https://github.com/trix/nano">https://github.com/trix/nano</a></li></ul><p>&nbsp;</p><h2><strong>4. Communication Between Modules</strong></h2><p>Although this may be something you attempt to solve using a homebrewed solution, using existing pub/sub or custom events approachs are ideal for implementing simple communication between the modules in your application. Below you can find links to some different implementations of pub/sub which vary in terms of what they offer. At the moment, Ben Alman&#39;s version is my implementation of preference as it focuses on size and utilizes jQuery custom events.</p><ul><li><a
+href="https://gist.github.com/743922">Ben Alman&#39;s pub/sub on GitHub</a>&nbsp;(this updated version contains two variations)</li><li><a
+href="http://github.com/phiggins42/bloody-jquery-plugins/blob/master/pubsub.js">@phiggins jQuery.pubsub</a></li><li><a
+href="http://roderick.dk/blog/2010/10/12/introducing-pubsubjs-a-library-for-doing-publish-subscribe-in-javascript/">PubSubJS</a></li><li><a
+href="http://jupiterjs.com/news/a-simple-powerful-lightweight-class-for-jquery">An Introduction To jQuery Custom Events</a></li><li><a
+href="http://millermedeiros.github.com/js-signals/">jsSignals &#8211; Custom Events/Messaging for jQuery</a></li></ul><p>&nbsp;</p><h2>5. Build Process &amp; Script Concatenation</h2><p>With large-scale jQuery and JavaScript applications it&#39;s important to have a build process in place which can assist in automating a number of tasks related to generating the final release of your code. This may not be necessary for the average website only requiring a few lines of jQuery, but serious web applications should definitely considering having a well-tuned BP in place to assist with unit testing, script concatenation, minification and other tasks. I generally recommend using &#39;Ant&#39; for build processes as I personally believe it&#39;s the most widely used solution of it&#39;s kind in the JavaScript community. To get started with Ant build scripts for JavaScript projects, take a look at <a
+href="http://www.javascriptr.com/2009/07/21/setting-up-a-javascript-build-process/">this</a> helpful tutorial.</p><p>Now let&#39;s take a look at your options for concatenation.</p><ul><li>Ruby library for preprocessing and concatenating JavaScript source files <a
+href="http://getsprockets.org/">http://getsprockets.org/</a></li><li>Combine and concatonate JavaScript files using Ant and YUI Compressor <a
+href="http://www.samaxes.com/2009/05/combine-and-minimize-javascript-and-css-files-for-faster-loading/">http://www.samaxes.com/2009/05/combine-and-minimize-javascript-and-css-files-for-faster-loading/</a> and <a
+href="http://www.javascriptr.com/2009/07/21/setting-up-a-javascript-build-process/">http://www.javascriptr.com/2009/07/21/setting-up-a-javascript-build-process/</a></li><li>Using Google Closure Compiler for compile JS applictions with Ant <a
+href="http://groups.google.com/group/closure-compiler-discuss/browse_thread/thread/92278e7a84736f3c">http://groups.google.com/group/closure-compiler-discuss/browse_thread/thread/92278e7a84736f3c</a></li><li>Programatically concatenating files using only Ant <a
+href="http://stackoverflow.com/questions/1373564/how-to-programmaticly-concatenate-with-ant">http://stackoverflow.com/questions/1373564/how-to-programmaticly-concatenate-with-ant</a></li><li>Concatonate files with MVC and .NET <a
+href="http://www.codeplex.com/MvcScriptManager">http://www.codeplex.com/MvcScriptManager</a></li><li>Smasher -&nbsp;Smasher is a PHP5 application based on an internal tool used by Yahoo! Search. Itcombines multiple JavaScript files, preprocesses them, and optionally minifies their content.&nbsp;<a
+href="http://github.com/jlecomte/smasher">http://github.com/jlecomte/smasher</a></li></ul><p>And here is another build process tool for your JavaScript applications:</p><ul><li>Jake (used with Cappuccino):&nbsp;<a
+href="http://cappuccino.org/discuss/2010/04/28/introducing-jake-a-build-tool-for-javascript/">http://cappuccino.org/discuss/2010/04/28/introducing-jake-a-build-tool-for-javascript/</a></li></ul><p>&nbsp;</p><h2>6. Script Minification</h2><p>Minification is a critical part of the build process for any large jQuery application. When delivering scripts in a live production environment (especially one which you may get a lot of traffic to), every extra byte counts, which is why you should ideally minify your code rather than just including the unminified/uncompressed version that requires your users to spend longer waiting for it to download.</p><p>The minification process can sometimes require a little tool tweaking to get the most out of it, but trust me when I say that this time can be well worth the investment. It might be interesting to note that over at jQuery, we are constantly testing new minification tools and a tool is never something set in stone &#8211; just because you opt for Google&#39;s Closure compiler in 2010 doesn&#39;t mean you might not shift to UglifyJS in 2011 for example. Your build process can be flexible enough to accomodate these changes.</p><p>Remember that minification is ideally done as part of a script concatenation step so factor this in too (Note: JavaScript MVC covers both these steps if you are opting to use MVC in your application).</p><p><strong>Options:</strong></p><ul><li>Google Closure Compiler&nbsp;<a
+href="http://code.google.com/closure/compiler/">http://code.google.com/closure/compiler/</a></li><li>YUI Compressor&nbsp;<a
+href="http://developer.yahoo.com/yui/compressor/">http://developer.yahoo.com/yui/compressor/</a> (and automating this with Packer <a
+href="http://johannburkard.de/blog/programming/javascript/automate-javascript-compression-with-yui-compressor-and-packer.html">here</a>)</li><li>Minifier&nbsp;<a
+href="http://aspnet.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=34488">http://aspnet.codeplex.com/Release/ProjectReleases.aspx?ReleaseId=34488</a></li><li>UglifyJS * (Recommended as it shows promising minification gains on the others)&nbsp;<a
+href="https://github.com/mishoo/cl-uglify-js">https://github.com/mishoo/cl-uglify-js</a></li><li>Packer for .NET <a
+href="http://svn.offwhite.net/trac/SmallSharpTools.Packer/wiki">http://svn.offwhite.net/trac/SmallSharpTools.Packer/wiki</a></li><li>Dojo Toolkit&#39;s ShrinkSafe <a
+href="http://www.dojotoolkit.org/">http://www.dojotoolkit.org/</a></li><li>JSMin &#8211; The JavaScript minifier <a
+href="http://www.crockford.com/javascript/jsmin.html">http://www.crockford.com/javascript/jsmin.html</a></li></ul><p>&nbsp;</p><h2>7. Testing</h2><p>Production-ready jQuery applications need to be heavily tested to ensure that your code both works *and* performs as expected &#8211; this is especially critical when writing large-scale apps as you don&#39;t want your users first experience to be of your application falling over.</p><p>Before we get deeper into this section, I should say that regardless of how complete your test coverage is, nothing really beats having a human that didn&#39;t write your code go through and test your code/application out. That said, let&#39;s take a look at further testing options.</p><p>Unit testing is something I suggest as a must but in this section I&#39;m also going to include links to resources on other aspects of testing jQuery apps which may come in helpful depending on what you&#39;re doing.</p><p><strong>Unit Tests For Your JavaScript/jQuery Code Using QUnit</strong></p><p>A solid build process with unit-testing should be used for testing and releasing any serious jQuery application. Manual functional testing is great from a user-interface perspective, but Unit testing will allow you to stress-test your code to find out if all the inner-workings of it perform as intended. Below is a good tutorial on how to get started with <a
+href="http://docs.jquery.com/Qunit">QUnit</a> &#8211; a popular jQuery Unit testing tool which is quite straight-forward to use. You may alternatively like to check out <a
+href="http://www.jsunit.net/">JSUnit</a> or <a
+href="http://fireunit.org/">FireUnit</a> but QUnit is by far the most widely used of the three and my personal unit testing tool of choice.</p><p><a
+href="http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/">http://net.tutsplus.com/tutorials/javascript-ajax/how-to-test-your-javascript-code-with-qunit/</a></p><p><strong>Unit Testing With FuncUnit From JavaScriptMVC</strong></p><p>FuncUnit, as recommended by Alex, allows you to easily manipulate elements and fake aspects such as user interaction quite well.FuncUnit itself is an add-on to QUnit and the tests you create with it can be run in the browser or with Selenium. It also allows you to automate basic QUnit tests in EnvJS (a commend line browser). &nbsp;We recommend checking it out</p><p><a
+href="http://jupiterjs.com/news/funcunit-fun-web-application-testing">http://jupiterjs.com/news/funcunit-fun-web-application-testing</a></p><p><strong>Mock Your Ajax Requests with MockJax &amp; jQuery for Rapid Development</strong></p><p>The MockJax plugin is a really fantastic development and testing tool for intercepting and simulating ajax requests made with jQuery with a minimal impact on changes to production code. I recommend this for testing web applications that frequently use Ajax connections. TamperData is also useful for testing of this type. Read the complete tutorial on using MockJax below.</p><p><a
+href="http://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development/">http://enterprisejquery.com/2010/07/mock-your-ajax-requests-with-mockjax-for-rapid-development/</a></p><p><strong>Getting Started With Test-Driven Development For jQuery</strong></p><p>The concept of test-driven development is quite simple. Anytime you want to add a new feature to your application, you need to write a test for it before writing any code for that feature. To write the test, you need to fully understand the specifications and requirements for what that feature does. At the start, your test will of course fail, but the goal is to ultimately code up a solution to that feature which is considered finished if the test passes. Here is an excellent tutorial on how to get started with test-driven development for jQuery with Elijah Manor.</p><p><a
+href="http://msdn.microsoft.com/en-us/scriptjunkie/ff452703.aspx">http://msdn.microsoft.com/en-us/scriptjunkie/ff452703.aspx</a></p><p><strong>Automating jQuery testing with Browser Launching, Test Execution And Result Reporting</strong></p><p>If building a large-scale web application that heavily relies on JavaScript, chances are you&rsquo;ll want to test your code in a number of different web browsers but also on a number of different platforms. You can achieve this without needing to do a lot of manual work using a number of existing frameworks. John Resig recommends<a
+href="http://code.google.com/p/webdriver">WebDriver</a> (Java), <a
+href="http://wtr.rubyforge.org/">Watir</a> (Ruby) and <a
+href="http://code.google.com/p/js-test-driver">JSTestDriver</a> for achieving these. <a
+href="http://seleniumhq.org/projects/remote-control">Selenium RC</a> is also popular for this purpose. These are the best tools to use if testing is performed in-house. If you&rsquo;re looking to use an external source of systems for your testing, see the next section.</p><p><strong>Debugging And Testing JavaScript In A Scripting Environment With Envjs and BumbleBee<br
+/> </strong></p><p><a
+href="http://www.envjs.com/">Envjs</a> is a tool which provides a JavaScript implementation of the browser as a usable scripting environment. This enables developers to effectively run jQuery and JavaScript in a console which can be useful for debugging purposes. The default implementation of Envjs is <a
+href="http://www.mozilla.org/rhino/">Rhino</a>.</p><p>Rhino (Java) is a great tool for running JavaScript in either shell form or embedded in other applications &ndash; in shell form it can be used as the debugger mentioned above. Rhino basically converts JavaScript code into Java classes and its primarily intended to be used in server-side applications. If your build process is based on using ANT or something similar, placing Rhino&rsquo;s JAR file into your classpath would allow your build to execute JavaScript.</p><p>A good testing toolkit for Envjs is <a
+href="http://github.com/ryangreenhall/bumblebee">BumbleBee</a> which was released this year. Bumblebee combines Rhino, JSpec, Envjs and Ant to provide an &quot;out of the box&quot; JavaScript testing toolkit where specs can easily be added to your automated build. I recommend checking it out!.</p><p><strong>jQuery Driven Automated User Interface Testing</strong></p><p>UITest is a recommended automated UI testing framework for jQuery projects written by Menno van Slooten. While quite young in terms of it&#39;s maturity, you can find some good examples of how to use this framework on the official github page or via Menno&#39;s original talk on the topic from his jQuery Bay Area Conference slides <a
+href="http://www.slideshare.net/mennovanslooten/jquery-bay-area-conference-2010">here</a>. You can also find out some additional recent information on user-interface testing for generic JavaScript applications at <a
+href="http://devermind.com/testing/selenium-vs-coded-ui-my-perspective/">this</a> post which discusses Selenium and Coded UI as alternatives.</p><p><a
+href="https://github.com/mennovanslooten/UITest">https://github.com/mennovanslooten/UITest</a></p><p>&nbsp;</p><p><meta
+charset="utf-8" /></p><h2>Conclusions</h2><p>I hope you&#39;ve found this guide to building large-scale jQuery applications useful. Whilst a single all-encompassing solution may very be something desirable to the community at large, the aim of this post was to provide you with all of the options that are (to my knowledge) available for both rolling your own large-scale toolkit for application development.</p><p>Providing you and your team with the flexibility to decide is the most useful thing that could be done with this information and in that regard, I hope I&#39;ve managed to trim down some of the time you may have otherwise spent researching this topic.</p><p>At the end of the day, if you <em>are</em> looking for an all-inclusive solution, JavaScriptMVC is probably the closest thing available to a mature, well-supported option and I encourage you to check it out if you feel it would benefit you more than a custom-rolled toolkit would.&nbsp;Remember that while comprehensive, JMVC is also completely modular. What this means is that if you desired, you could just take FuncUnit, the Controller and StealJS and use them as your own personal toolkit without much heavy-lifting at all.&nbsp;</p><p>Whatever direction you do take with building your large-scale application, know that there are enough tools and resources within the JavaScript community to help get you started.</p><p>&nbsp;</p><h2>Further Reading &amp; Resources</h2><ul><li><a
+href="http://blog.rebeccamurphey.com/on-jquery-large-applications">On jQuery and large applications with Rebecca Murphy</a></li><li><a
+href="http://alexsexton.com/?p=106">On &#39;Rolling Your Own&#39; Large jQuery Apps with Alex Sexton</a></li><li><a
+href="http://jqueryui.com/docs/Developer_Guide">jQuery UI Developer&#39;s Guide (for those wishing to use $.widget etc)</a></li><li><a
+href="http://developer.yahoo.com/yui/theater/video.php?v=zakas-architecture">Nicholas Zakas &#8211; Scalable JavaScript Application Architecture</a></li><li><a
+href="http://blog.jerodsanto.net/2010/12/the-tech-behind-the-new-grooveshark/">Tech Behind The New GrooveShark (Good Article On Large Scale jQuery App Dev)</a></li><li><a
+href="http://blog.codylindley.com/links">Cody Lindley&#39;s excellent list of client-side development links for app development</a></li><li>JavaScript Documentation Tools: <a
+href="http://jsdoc.sourceforge.net/">JSDoc</a>, <a
+href="http://developer.yahoo.com/yui/yuidoc/">YUI Doc</a>&nbsp;or <a
+href="http://pdoc.org/">PDoc</a></li></ul><p>&nbsp;</p><p>And that&#39;s it!. I would like to extend my thanks to Alex Sexton, Dan Heberden and Justin Meyer for their assistance with parts of this post. If you found it helpful, please feel free to hit the reweet button to share it with your friends and colleagues. Until next time, good luck with your JavaScript &amp; jQuery apps!.</p><p>- Addy.</p> <iframe
+src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Faddyosmani.com%2Fblog%2Flarge-scale-jquery%2F&amp;layout=standard&amp;&amp;width=450&amp;action=like&amp;colorscheme=light" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:450px;height:50px;margin-top:5px;"></iframe></div> <footer
+class="entry-meta"> <a
+href="http://addyosmani.com/blog/large-scale-jquery/" class="post-date">December 24, 2010</a><p><span
+class="cat-links"><span
+class="cat-links-title">Categories </span><a
+href="http://addyosmani.com/blog/category/web-development/" title="View all posts in Web Development" rel="category tag">Web Development</a></span> <span
+class="tag-links"><span
+class="tag-links-title">Tags </span><a
+href="http://addyosmani.com/blog/tag/applications/" rel="tag">applications</a>, <a
+href="http://addyosmani.com/blog/tag/build-script/" rel="tag">build script</a>, <a
+href="http://addyosmani.com/blog/tag/building/" rel="tag">building</a>, <a
+href="http://addyosmani.com/blog/tag/compression/" rel="tag">compression</a>, <a
+href="http://addyosmani.com/blog/tag/concatenation/" rel="tag">concatenation</a>, <a
+href="http://addyosmani.com/blog/tag/enterprise-applications/" rel="tag">enterprise applications</a>, <a
+href="http://addyosmani.com/blog/tag/enterprise-jquery/" rel="tag">enterprise jquery</a>, <a
+href="http://addyosmani.com/blog/tag/enterprise-level-jquery/" rel="tag">enterprise level jquery</a>, <a
+href="http://addyosmani.com/blog/tag/javascriptmvc/" rel="tag">javascriptmvc</a>, <a
+href="http://addyosmani.com/blog/tag/jquery/" rel="tag">jquery</a>, <a
+href="http://addyosmani.com/blog/tag/jquery-applications/" rel="tag">jquery applications</a>, <a
+href="http://addyosmani.com/blog/tag/jquery-large-scale/" rel="tag">jquery large-scale</a>, <a
+href="http://addyosmani.com/blog/tag/large/" rel="tag">large</a>, <a
+href="http://addyosmani.com/blog/tag/large-jquery-apps/" rel="tag">large jquery apps</a>, <a
+href="http://addyosmani.com/blog/tag/large-scale-jquery/" rel="tag">large-scale jquery</a>, <a
+href="http://addyosmani.com/blog/tag/minification/" rel="tag">minification</a>, <a
+href="http://addyosmani.com/blog/tag/mvc/" rel="tag">mvc</a>, <a
+href="http://addyosmani.com/blog/tag/mvc-with-jquery/" rel="tag">mvc with jquery</a></span></p> </footer></div> </article><div
+id="comments"><h3 id="comments-title">102 Comments</h3><ol
+class="commentlist"><li
+class="comment even thread-even depth-1" id="li-comment-6567"> <article
+id="comment-6567" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/418f43f0051bf3104bbfb5f60c4dc763?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Antonio</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-6567"> February 19, 2011 at 9:49 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=6567#respond' onclick='return addComment.moveForm("comment-6567", "6567", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Can I use jquery template without having to have all the templates (text/x-jquery-tmpl) in the page? Can I load the templates &#039;on demand&#039; via ajax? something like a tag {{asyncTmpl}}</p></div> </article><ul
+class='children'><li
+class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-6571"> <article
+id="comment-6571" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://www.addyosmani.com' rel='external nofollow' class='url'>Addy</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-6571"> February 19, 2011 at 11:59 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=6571#respond' onclick='return addComment.moveForm("comment-6571", "6571", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Thats a very good question. I have yet to see an example of that being achieved, but it&#039;s very possible that as long as you&#039;re injecting your template definitions into the DOM before attempting to populate them (whether you&#039;re loading them in via ajax or otherwise) that it should be feasible. I&#039;d stress that I would only do that in the scenario where you have a *lot* of different templates and the cost of including them in your standard markup would mean a much longer pageload time.</p></div> </article></li></ul></li><li
+class="post pingback"><p>Pingback: <a
+href='http://zhesto.wordpress.com/2011/02/25/links-for-2011-02-24/' rel='external nofollow' class='url'>links for 2011-02-24 &laquo; Bloggitation</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://devsnack.wordpress.com/2011/02/25/large-scale-jquery-development/' rel='external nofollow' class='url'>Large-scale JQuery Development &laquo; devsnack</a></p></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-6666"> <article
+id="comment-6666" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/8df6e320a32580cffe9c5a2c07458008?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Tim Graf</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-6666"> February 26, 2011 at 12:17 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=6666#respond' onclick='return addComment.moveForm("comment-6666", "6666", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>This is a wealth of information for someone who is just starting out with a jQuery based project.  Thanks so much for providing this.</p></div> </article></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.kozlenko.info/blog/2011/03/01/linxs-2011-03-01-2/' rel='external nofollow' class='url'>LinXs 2011-03-01</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://addyosmani.com/blog/tools-for-jquery-application-architecture-the-printable-chart/' rel='external nofollow' class='url'>Tools For jQuery Application Architecture &#8211; The Printable Chart</a></p></li><li
+class="comment odd alt thread-even depth-1" id="li-comment-7093"> <article
+id="comment-7093" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=40' class='avatar avatar-40 photo avatar-default' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://twitter.com/stevehebert' rel='external nofollow' class='url'>@stevehebert</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-7093"> March 14, 2011 at 1:51 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=7093#respond' onclick='return addComment.moveForm("comment-7093", "7093", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Awesome post &#8211; thanks for this!</p><p>Have you looked at the Reactive Extensions of for JQuery/Javascript?  These provide a complete solution for handling out-of-order return values &#8211; especially critical in eventing models.<br
+/> <a
+href="http://codebetter.com/matthewpodwysocki/2010/03/21/introduction-to-the-reactive-extensions-for-javascript-jquery-live-event-integration/" rel="nofollow"></a><a
+href="http://codebetter.com/matthewpodwysocki/2010/03/2" rel="nofollow">http://codebetter.com/matthewpodwysocki/2010/03/2</a>&#8230;</p></div> </article></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-7192"> <article
+id="comment-7192" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/deaff9aae081393a36b087230750617d?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">UncleSam</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-7192"> March 19, 2011 at 11:48 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=7192#respond' onclick='return addComment.moveForm("comment-7192", "7192", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Thanks! Very big thanks for this article!</p></div> </article></li><li
+class="comment odd alt thread-even depth-1" id="li-comment-7195"> <article
+id="comment-7195" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/d41ac8d24dd32c0e6c9ce5cdd6e27035?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Alexey</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-7195"> March 20, 2011 at 7:44 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=7195#respond' onclick='return addComment.moveForm("comment-7195", "7195", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Thank you very much. I couldn&#039;t imagine there are lots of JS frameworks and what they can do. I only glanced at the article, but I think it will open my eyes on JS programming.</p></div> </article></li><li
+class="post pingback"><p>Pingback: <a
+href='http://churchco.de/guide-to-architecting-large-scale-jquery-applications/' rel='external nofollow' class='url'>Guide To Architecting Large-Scale jQuery Applications | ChurchCode</a></p></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-7298"> <article
+id="comment-7298" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/a231cb41571d096f8096940dcd8ce0ac?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://twitter.com/cortezcristian' rel='external nofollow' class='url'>@cortezcristian</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-7298"> March 25, 2011 at 10:46 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=7298#respond' onclick='return addComment.moveForm("comment-7298", "7298", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>I wanna share this article related that I&#039;ve written about &quot;The Art of Loading Scripts&quot;, take a look <img
+src='http://addyosmani.com/blog/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /> <a
+href="http://pldleague.com/general/the-art-of-loading-scripts/" rel="nofollow"></a><a
+href="http://pldleague.com/general/the-art-of-loading-s" rel="nofollow">http://pldleague.com/general/the-art-of-loading-s</a>&#8230;</p></div> </article></li><li
+class="post pingback"><p>Pingback: <a
+href='http://blog.dezynworks.com/?p=5' rel='external nofollow' class='url'>Wrestling with Dojo &#8212; Dezynworks</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://churchm.ag/guide-to-architecting-large-scale-jquery-applications/' rel='external nofollow' class='url'>Guide To Architecting Large-Scale jQuery Applications | Church Mag</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://sience.artbildex.com/?p=39' rel='external nofollow' class='url'>Создание большого приложения на Javascript | Javascript и все остальное</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://sysolution.wordpress.com/2011/09/09/links-for-2011-09-09/' rel='external nofollow' class='url'>links for 2011-09-09 &laquo; sySolution</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://blog.kooljoy.com/resources/javascript-resources' rel='external nofollow' class='url'>Javascript Resources &laquo; Kooljoy.com Blog</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.mbradydesigns.com/IMD465/2011/10/24/building-large-scale-jquery-applications/' rel='external nofollow' class='url'>Building Large-Scale jQuery Applications | Winter 2011 AiW Blog</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://verekia.com/requirejs/build-simple-client-side-mvc-app-requirejs' rel='external nofollow' class='url'>Build a simple client-side MVC app with RequireJS | @verekia&#039;s blog</a></p></li><li
+class="comment odd alt thread-even depth-1" id="li-comment-11512"> <article
+id="comment-11512" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/f7daf89168df6365f2d0cec7bd1affb8?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://www.swdevsoftwareconsulting.blogspot.com' rel='external nofollow' class='url'>Eko SW</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-11512"> November 27, 2011 at 1:12 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=11512#respond' onclick='return addComment.moveForm("comment-11512", "11512", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Thanks for this article. I am a Dojo enthusiast at first, but currently I am looking for something new. jQuery seems to fit my scenario. Thanks</p></div> </article></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-11970"> <article
+id="comment-11970" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/2026682d061e2700597c7797f8548c86?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://www.ample.com.au' rel='external nofollow' class='url'>jimtse</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-11970"> December 13, 2011 at 1:25 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=11970#respond' onclick='return addComment.moveForm("comment-11970", "11970", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>I found this article just when I was about to start a extensive research on &#039;the best&#039; jQuery framework that would suit me. Pretty comprehensive with wealth of information, yet very objective outlining pros/cons of alternatives. Not only it trims an enormous time, also offering recommendations based on author&#039;s first hand experience. Thanks a lot for sharing. Keep up the good work <img
+src='http://addyosmani.com/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p></div> </article></li><li
+class="comment odd alt thread-even depth-1" id="li-comment-12376"> <article
+id="comment-12376" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/394134cdd329908b768a84386daf29ff?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://Fradov.com' rel='external nofollow' class='url'>Rizalmovic</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-12376"> December 24, 2011 at 8:28 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=12376#respond' onclick='return addComment.moveForm("comment-12376", "12376", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Thank you so much for this article.. <img
+src='http://addyosmani.com/blog/wp-includes/images/smilies/icon_biggrin.gif' alt=':D' class='wp-smiley' /></p></div> </article></li><li
+class="post pingback"><p>Pingback: <a
+href='http://php-soft.cba.pl/?p=809' rel='external nofollow' class='url'>Programowanie w PHP &raquo; Blog Archive &raquo; This Week in Web – Python, KodApp, jQuery</a></p></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-14720"> <article
+id="comment-14720" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/b6c85faacb1a59a39f31f8820dcbd478?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">James</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-14720"> March 14, 2012 at 3:09 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=14720#respond' onclick='return addComment.moveForm("comment-14720", "14720", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>I know this post was a while back but in more recent articles you advocate the use of a mediator in large-scale javascript apps. How might using the jQuery pub/sub options plug in with the mediator pattern?</p></div> </article><ul
+class='children'><li
+class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-14884"> <article
+id="comment-14884" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Addy</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-14884"> March 21, 2012 at 7:44 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=14884#respond' onclick='return addComment.moveForm("comment-14884", "14884", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>If you take a look at the latest version of my book on Essential JavaScript Design patterns I actually cover the answer to this in the mediator section <img
+src='http://addyosmani.com/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /></p></div> </article></li></ul></li><li
+class="post pingback"><p>Pingback: <a
+href='http://beta.kidotech.com/2010/12/27/building-large-scale-jquery-applications/' rel='external nofollow' class='url'>Building Large-Scale jQuery Applications - Kido Technologies Pte Ltd</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://www.acyclique.com/codus/jquery-aussi-puissant-quextjs/' rel='external nofollow' class='url'>&raquo; Jquery aussi puissant qu&#8217;ExtJS codus</a></p></li><li
+class="post pingback"><p>Pingback: <a
+href='http://asitchanges.com/2012/06/07/the-worthy-web-june-7-2012/' rel='external nofollow' class='url'>The Worthy Web: June 7, 2012 - As It Changes</a></p></li><li
+class="comment even thread-even depth-1" id="li-comment-17167"> <article
+id="comment-17167" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/0baabb7dbcb726a289966c88a1eab549?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Tome</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-17167"> July 12, 2012 at 8:44 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=17167#respond' onclick='return addComment.moveForm("comment-17167", "17167", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>This guide (and the related flowcharts etc) has been really, really helpful to me in trying to set up a good set of systems and perspectives for building web apps. Thanks so much!</p></div> </article><ul
+class='children'><li
+class="comment byuser comment-author-admin bypostauthor odd alt depth-2" id="li-comment-17168"> <article
+id="comment-17168" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/96270e4c3e5e9806cf7245475c00b275?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Addy</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-17168"> July 12, 2012 at 8:45 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=17168#respond' onclick='return addComment.moveForm("comment-17168", "17168", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Not at all. You&#8217;re very welcome!</p></div> </article></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="li-comment-17390"> <article
+id="comment-17390" class="comment"> <img
+alt='' src='http://1.gravatar.com/avatar/99c171c648beebb5b61d986e911f17e2?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn">Venkat</cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-17390"> August 9, 2012 at 3:05 am</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=17390#respond' onclick='return addComment.moveForm("comment-17390", "17390", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>Very useful writeup. Thanks a bunch. It helped clarify quite a bit of my confusions.</p><p>I have a quick question &#8211; We are planning to use one of the JS MVC frameworks for an application that will be part of a bigger website. The parent website outside of my application has regular html pages (driven out of a CMS) and controls the navigation. Our application&#8217;s entry and exit points will be part of the that navigation and users will enter and exit my app quite often.</p><p>If i develop this application as a single page app, using one of these mvc frameworks, I am concerned about the user experience as the transition between our application and rest of the website will be rough.</p><p>Is there a way around where the transition is smooth and we can still organize our JS code following the MVC pattern?</p><p>Please provide your thoughts. Thanks.</p></div> </article></li><li
+class="comment odd alt thread-even depth-1" id="li-comment-17517"> <article
+id="comment-17517" class="comment"> <img
+alt='' src='http://0.gravatar.com/avatar/e6a6ac16cf4fabe0e459a0ddcf800071?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=G' class='avatar avatar-40 photo' height='40' width='40' /><div
+class="comment-header"><cite
+class="fn"><a
+href='http://boilerplatejs.org' rel='external nofollow' class='url'>Hasith</a></cite> <a
+class="comment-time" href="http://addyosmani.com/blog/large-scale-jquery/comment-page-2/#comment-17517"> August 15, 2012 at 9:31 pm</a> <a
+class='comment-reply-link' href='/blog/large-scale-jquery/?replytocom=17517#respond' onclick='return addComment.moveForm("comment-17517", "17517", "respond", "2069")'>Reply</a></div><div
+class="comment-content"><p>If someone is interested on a ready made reference architecture to play with, have a look at:</p><p><a
+href="http://boilerplatejs.org" rel="nofollow">http://boilerplatejs.org</a></p><p>After struggling with first few large scale javascript projects, I combined my learnings in to this code base. You can use it as the startup code for your projects. BoilerplateJS make use of most of the libraries and concepts discussed in this article such as</p><p> &#8211; dependency management<br
+/> &#8211; UI layer structuring<br
+/> &#8211; Templating<br
+/> &#8211; Module Event mediation<br
+/> &#8211; Build process<br
+/> &#8211; Minification<br
+/> &#8211; Unit Testing</p><p>and several more concerns too&#8230;</p></div> </article></li></ol> <nav
+id="comment-nav-below"><div
+class="nav-next"></div><div
+class="nav-previous"><a
+href="http://addyosmani.com/blog/large-scale-jquery/comment-page-1/#comments" >&larr; Older Comments</a></div> </nav><div
+id="respond"><h3 id="reply-title">Leave a Reply <small><a
+rel="nofollow" id="cancel-comment-reply-link" href="/blog/large-scale-jquery/#respond" style="display:none;">Cancel reply</a></small></h3><form
+action="http://addyosmani.com/blog/wp-comments-post.php" method="post" id="commentform"><p
+class="comment-notes">Required fields are marked <span
+class="required">*</span>.</p><p
+class="comment-form-author"><label
+for="author">Name <span
+class="required">*</span></label> <input
+id="author" name="author" type="text" value="" size="30" aria-required='true' /></p><p
+class="comment-form-email"><label
+for="email">Email <span
+class="required">*</span></label> <input
+id="email" name="email" type="text" value="" size="30" aria-required='true' /></p><p
+class="comment-form-url"><label
+for="url">Website</label><input
+id="url" name="url" type="text" value="" size="30" /></p><p
+class="comment-form-comment"><label
+for="comment">Message <span
+class="required">*</span></label><br/><textarea id="comment" name="comment" rows="8"></textarea></p><p
+class="form-submit"> <input
+name="submit" type="submit" id="submit" value="Send" /> <input
+type='hidden' name='comment_post_ID' value='2069' id='comment_post_ID' /> <input
+type='hidden' name='comment_parent' id='comment_parent' value='0' /></p><p
+style="display: none;"><input
+type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3098a235ee" /></p></form></div></div> <nav
+id="nav-below"><div
+class="nav-next"><a
+href="http://addyosmani.com/blog/spotlight-issue1/" rel="next">Next Post &rarr;</a></div><div
+class="nav-previous"><a
+href="http://addyosmani.com/blog/javascript-101-free-course/" rel="prev">&larr;  Previous Post</a></div> </nav></div><div
+id="secondary" class="widget-area" role="complementary"><div
+id="widget-others"> <aside
+id="text-4" class="widget widget_text"><h3 class="widget-title">What would you like to do?</h3><div
+class="textwidget"><ul
+class="ui-right-bar"><li> <a
+href="https://twitter.com/addyosmani" class="twitter-follow-button">Follow @addyosmani</a> <script src="//platform.twitter.com/widgets.js" type="text/javascript"></script> </li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2011/08/004.png"/> <a
+href="http://addyosmani.wufoo.com/forms/how-can-i-help/">Drop me a message</a></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2011/08/kblogger.png"/> <a
+href="http://addyosmani.wufoo.com/forms/public-speaking/">Public speaking enquiries</a></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2011/08/001.png"/> <a
+href="http://feeds.feedburner.com/addyosmani">Subscribe to RSS feed</a></li></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2011/08/plus.png"/> <a
+href="https://plus.google.com/115133653231679625609/posts">Read my posts on Google+</a></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2013/01/github.png"/> <a
+href="http://github.com/addyosmani">Follow my projects on GitHub</a></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2011/08/linkedin.png"/> <a
+href="http://uk.linkedin.com/in/osmani">Let's connect on LinkedIn</a></li><li><img
+src="http://addyosmani.com/blog/wp-content/uploads/2013/01/lanyrd.png"/> <a
+href="http://lanyrd.com/profile/addyosmani">Speaking on Lanyrd</a></li></ul></div> </aside><aside
+id="text-3" class="widget widget_text"><h3 class="widget-title">Support The Site With A Click</h3><div
+class="textwidget"><div
+class="box box-verts"><div
+class="sideco"><div
+id="bsap_1255514" class="bsarocks bsap_b904728f5aadf0985eec83c03f0d8845"></div> <a
+href="http://adpacks.com" id="bsap_aplink">via Ad Packs</a></div><div></div>  <script type="text/javascript">(function(){
+  var bsa = document.createElement('script');
+     bsa.type = 'text/javascript';
+     bsa.async = true;
+     bsa.src = '//s3.buysellads.com/ac/bsa.js';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+})();</script> <style type="text/css">.one .bsa_it_ad .bsa_it_t { color: #fff;}
+.one .bsa_it_ad .bsa_it_d { color: #ccc;}
+.one .bsa_it_p a { color: #666;}
+.one .bsa_it_p { display: none; }
+.one .bsa_it_ad { background: #666}</style></div> </aside><aside
+id="linkcat-980" class="widget widget_links"><h3 class="widget-title">My Free Books &amp; Guides</h3><ul
+class='xoxo blogroll'><li><a
+href="http://github.com/addyosmani/backbone-fundamentals">Developing Backbone.js Applications</a></li><li><a
+href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">Learning JavaScript Design Patterns</a></li><li><a
+href="http://addyosmani.com/largescalejavascript">Patterns For Large-Scale JavaScript Development</a></li><li><a
+href="http://addyosmani.com/writing-modular-js">Writing Modular JavaScript With AMD, CJS &amp; Harmony</a></li></ul> </aside> <aside
+id="linkcat-1023" class="widget widget_links"><h3 class="widget-title">Purchase Books</h3><ul
+class='xoxo blogroll'><li><a
+href="http://shop.oreilly.com/product/0636920025344.do">Developing Backbone.js Applications (O&#039;Reilly)</a></li><li><a
+href="http://shop.oreilly.com/product/0636920025832.do">Learning JavaScript Design Patterns (O&#039;Reilly)</a></li></ul> </aside> <aside
+id="linkcat-979" class="widget widget_links"><h3 class="widget-title">Popular Presentations</h3><ul
+class='xoxo blogroll'><li><a
+href="https://speakerdeck.com/addyosmani/tooling-for-the-modern-webapp-developer">A Toolbelt For The Modern WebApp Developer</a></li><li><a
+href="https://speakerdeck.com/addyosmani/decoupling-javascript-vs-the-world">Decoupling JavaScript</a></li><li><a
+href="https://speakerdeck.com/addyosmani/jquery-toronto-gone-in-60-frames-per-second">Gone In 60 Frames Per Second</a></li><li><a
+href="http://speakerdeck.com/u/addyosmani/p/large-scale-javascript-application-architecture">Large-scale JavaScript Application Architecture</a></li><li><a
+href="http://addyosmani.com/polyfillthehtml5gaps/slides/">Polyfilling The HTML5 Gaps With JavaScript</a></li><li><a
+href="https://speakerdeck.com/addyosmani/the-new-wave-utility-belt-fowa">The New Wave Utility Belt</a></li></ul> </aside> <aside
+id="linkcat-162" class="widget widget_links"><h3 class="widget-title">Recommended Reading</h3><ul
+class='xoxo blogroll'><li><a
+href="http://eloquentjavascript.net/">Eloquent JavaScript</a></li><li><a
+href="http://bonsaiden.github.com/JavaScript-Garden/">JavaScript Garden</a></li><li><a
+href="http://shop.oreilly.com/product/9780596806767.do">JavaScript Patterns</a></li><li><a
+href="http://shop.oreilly.com/product/9780596805531.do">JavaScript The Definitive Guide</a></li><li><a
+href="http://shop.oreilly.com/product/0636920025245.do">Maintainable JavaScript</a></li><li><a
+href="https://github.com/rwldrn/idiomatic.js" title="Principles of Writing Consistent, Idiomatic JavaScript">Principles Of Writing Idiomatic JavaScript</a></li></ul> </aside> <aside
+id="search-4" class="widget widget_search"><h3 class="widget-title">Search</h3><form
+method="get" id="searchform" action="http://addyosmani.com/blog"> <input
+type="text" class="field" name="s" id="s"  placeholder="Search" /> <input
+type="submit" class="submit" name="submit" id="searchsubmit" value="Search" /></form></aside><aside
+id="text-2" class="widget widget_text"><h3 class="widget-title">Do you like the site?</h3><div
+class="textwidget"><a
+target="_blank" href="http://bit.ly/addyosmani"><img
+border=0 src="http://addyosmani.com/blog/wp-content/uploads/2013/07/likes.jpg"/></a></div> </aside><aside
+id="recent-comments-3" class="widget widget_recent_comments"><h3 class="widget-title">Recently Discussed</h3><ul
+id="recentcomments"><li
+class="recentcomments">Addy on <a
+href="http://addyosmani.com/blog/devtools-incrementing-css-values/comment-page-1/#comment-34008">DevTools: Incrementing CSS values under-the-cursor</a></li><li
+class="recentcomments">Addy on <a
+href="http://addyosmani.com/blog/rendering-perf-casestudies/comment-page-1/#comment-34007">Rendering Performance Case Studies (G+, Flickr And More)</a></li><li
+class="recentcomments">Eth on <a
+href="http://addyosmani.com/blog/rendering-perf-casestudies/comment-page-1/#comment-34005">Rendering Performance Case Studies (G+, Flickr And More)</a></li><li
+class="recentcomments"><a
+href='http://wildeyes.github.io' rel='external nofollow' class='url'>WildEyes</a> on <a
+href="http://addyosmani.com/blog/devtools-incrementing-css-values/comment-page-1/#comment-34004">DevTools: Incrementing CSS values under-the-cursor</a></li><li
+class="recentcomments">Abner Soares Alves Junior on <a
+href="http://addyosmani.com/blog/automating-workflow/comment-page-1/#comment-33999">Slides: Automating Front-end Workflow</a></li><li
+class="recentcomments"><a
+href='http://www.coreyrothwell.com' rel='external nofollow' class='url'>Corey Rothwell</a> on <a
+href="http://addyosmani.com/blog/automating-workflow/comment-page-1/#comment-33992">Slides: Automating Front-end Workflow</a></li></ul></aside></div></div></div><div
+class="clear"></div> <footer
+id="colophon"><div
+id="site-generator"><p>&copy; AddyOsmani.com</p></div> <a
+href="#header" class="top-btn">Top</a> </footer></div><div
+id="footercontainer"><div
+id="footer"><div
+class="col1"><h3>About</h3><p><img
+class="footeravatar" style="margin:6px; margin-right:8px; margin-left:0px;float:left; width:60px;border:6px solid #fff;" src="http://addyosmani.com/blog/wp-content/uploads/2013/03/avatar.jpeg"/>I work on the Chrome team at Google, building and advocating for tools to help improve developer productivity and satisfaction.</p><p>My personal projects include <a
+href="http://github.com/addyosmani/todomvc">TodoMVC</a>, which helps developers compare JavaScript MVC frameworks and <a
+href="http://github.com/aurajs">AuraJS</a>. I've also written <a
+href="http://addyosmani.github.com/backbone-fundamentals">'Developing Backbone.js Applications'</a> and <a
+href="http://addyosmani.com/resources/essentialjsdesignpatterns/book/">'Learning JavaScript Design Patterns'</a>.</div><div
+class="col2"><h3>Fundamentals</h3><p><strong>First do it, then do it right, then do it better.</strong> This is one fundamental I always keep in mind when developing anything.</p><p>If you're a developer wishing to learn something new, regardless of skill-level, remember that as important as it is to read, it's equally as important to get out there and *do*.</p><p>Create a new <a
+href="http://gist.github.com">gist</a> or <a
+href="http://jsfiddle.net">fiddle</a>, pop open the <a
+href="http://code.google.com/chrome/devtools/docs/console.html">console</a> and experiment. It's effing fun.</p></div><div
+class="col3"><h3>Projects</h3><p><a
+href="http://github.com/yeoman"><img
+src="https://1.gravatar.com/avatar/1039a7af7ed0840f84367608d0321ef5?d=https%3A%2F%2Fidenticons.github.com%2F845e9b722490df2335dba9cdc80a234c.png&s=100/"></a> <a
+href="http://github.com/tastejs"><img
+src="https://0.gravatar.com/avatar/9d0fa095b1d0462af883ffd0bb01e68d?d=https%3A%2F%2Fidenticons.github.com%2F78d958d288514e26a779d967ea8e0735.png&s=100"/> <a
+href="http://github.com/aurajs"><img
+src="https://2.gravatar.com/avatar/d92faa9133b9b4e1750b595c7d21927d?d=https%3A%2F%2Fidenticons.github.com%2F10ae0bbd16be9cdb94de45e3ac686691.png&s=100"/></a></p></div></div>
+ <script type="text/javascript">var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-10445040-2']);
+			_gaq.push(['_trackPageview']);
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();</script><script type='text/javascript' src='http://addyosmani.com/blog/wp-content/plugins/wp-markdown/js/markdown.min.js?ver=1.3'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201347.js" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({blog:'9541132',v:'ext',post:'2069'});
+var load_cmc = function(){linktracker_init(9541132,2069,2);};
+if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+else load_cmc();
+</script>
+
+
+
+
+
+<script type="text/javascript">
+$(function(){
+var noteTrigger = $('#notetrigger'),
+	noteTaker   = $('#notetaker'),
+	contentTrigger = $('#contenttrigger'),
+	contentTaker = $('#contenttaker');
+
+noteTrigger.toggle(function(){ noteTaker.slideDown(); },function(){ noteTaker.slideUp(); });
+contentTrigger.toggle(function(){ contentTaker.slideDown(); }, function(){ contentTaker.slideUp();  });
+});
+</script>
+
+</body>
+</html>
+<!-- Dynamic page generated in 0.428 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-11-20 03:42:31 -->
+
+<!-- Compression = gzip -->

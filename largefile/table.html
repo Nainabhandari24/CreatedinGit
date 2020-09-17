@@ -1,0 +1,2680 @@
+
+<html>
+<head>
+<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon" />
+
+<title>Eep&sup2 - 3D Game Comparison - Comparison Table</title>
+
+<style type=text/css>
+body {font-family:"Trebuchet MS"; font-size:10pt}
+td {font-family:Tahoma; font-size:8pt}
+td.a {font-family:"Trebuchet MS" !important; font-size:10pt !important}
+td.header {font-weight:bold; white-space: nowrap;}
+td.l {line-height:95%}
+tr.col {visibility:collapse}
+tr.vis {visibility:visible}
+
+a:link:hover, a:visited:hover {color:#c6ccd0}
+a img:hover {outline:#c6ccd0 dotted thin}
+<!--a:visited {color:#000}
+#l a:link {color:white}-->
+a.l:link {color:#acb2b6}
+a.l:visited {color:#8e99a2}
+a.l:hover, a.l:link:hover, acronym.l:hover {color:#c6ccd0}
+a.w:link {color:#fff}
+a.w:visited {color:#acb2b6}
+acronym {cursor:help}
+acronym.l {cursor:pointer; text-decoration:none; color:#acb2b6}
+
+.b {border-left: thin solid #acb2b6; border-right: thin solid #acb2b6}
+
+#a {
+ color:#8e99a2;
+ font-weight:bold;
+ background-color:#606068
+}
+/*.a {background-color:#333}*/
+#b {
+ color:#c6ccd0;
+ background-color:#606068;
+ font-weight:bold
+ }
+#c {font-family:Tahoma;font-size:8pt}
+#f {font-family:"Trebuchet MS";font-size:10pt;color:#ccc;}
+#w {font-family:"Trebuchet MS"; font-size:10pt; color:#fff; letter-spacing: 10px;}
+
+</style>
+<!--tr {onMouseOver:"this.bgColor='333333';"; onMouseOut:"this.bgColor='000000';"}-->
+
+<!--<script type="text/javascript" src="../tablesort.js"></script>-->
+<!--<script type="text/javascript" src="../sorttable.js"></script>-->
+<!--<script type="text/javascript" src="../tablesort1.js"></script>-->
+
+<!-- collapsable sections -->
+<script language="javascript">
+function getItem(id)
+{
+    var itm = false;
+    if(document.getElementById)
+        itm = document.getElementById(id);
+    else if(document.all)
+        itm = document.all[id];
+    else if(document.layers)
+        itm = document.layers[id];
+
+    return itm;
+}
+
+function toggleItem(id)
+{
+    itm = getItem(id);
+
+    if(!itm)
+        return false;
+
+    if(itm.style.display == 'none')
+        itm.style.display = '';
+    else
+        itm.style.display = 'none';
+
+    return false;
+}
+</script>
+    
+<basefont face="trebuchet ms">
+
+</head>
+<!--text=707e88 bgcolor=000000 link=8e99a2 vlink=707e88 alink=c6ccd0-->
+<body text=#000000 bgcolor=#80828c link=#29333d vlink=#000000 alink=#5a7085 marginwidth=0 leftmargin=0 rightmargin=0 marginheight=0 topmargin=0 bottommargin=0>
+
+<table cellpadding=0 cellspacing=0 width=100%>
+	<tr valign=top><td width=10% id=c><a href=../>< Eep&sup2</a><br>
+		<img src=../branch_end.gif align=absmiddle border=0 width=16 height=16> <a href=../games.html>Games</a><br>
+	</td>
+
+	<td><center><font size=+3><font face="trebuchet ms">3D Game Comparison</td>
+
+	<td align=right width=10% nowrap><img src=http://www.ipstat.com/cgi-bin/ipstat?name=eeptrcompare height=1 width=1 border=0><a href=../email.html><img src=../mail.gif alt="Email Eep&sup2" align=bottom border=0 width=47 height=26></a></td>
+</table>
+
+<center>"Game vs. game. No hype; just facts."™<p>18 compared games (78 comparisons) + 51 honorable mentions = 69 games</center>
+
+<p><a name=table><table cellpadding=0 cellspacing=0 width=100%>
+<th align=left id=b><font size=+2><img src=../table.gif alt="Comparison Table" border=0 width=16 height=13> Comparison Table</table>
+
+
+<table cellpadding=5>
+<tr valign=top>
+<td width=15%>
+<table cellpadding=0 cellspacing=0>
+	<tr><td colspan=2><img src=../intro.gif align=absmiddle alt=Introduction border=0 width=16 height=15> <a href=.>Introduction</a></td></tr>
+	<tr><td colspan=2><img src=../news.gif align=absmiddle alt=News/Updates border=0 width=16 height=16> <a href=./#news>News/Updates</a></td></tr>
+	<tr><td colspan=2><img src=../table.gif align=absmiddle alt="Comparison Table" border=0 width=16 height=13> Comparison Table</td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16><img src=engine.gif width=20 height=16 border=0 align=absmiddle alt=Engine></td><td>&nbsp;<a href=#header>Engine</a></td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16>&nbsp;&nbsp;<img src=character1.gif width=16 height=16 border=0 align=absmiddle alt="Player Character"></td><td>&nbsp;<a href=#character>Player Character</a></td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16><img src=level.gif width=24 height=16 border=0 align=absmiddle alt="Level/World Design"></td><td>&nbsp;<a href=#design>Level/World Design</a></td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16><img src=sword.gif width=16 height=16 border=0 align=absmiddle alt=Weapons></td><td>&nbsp;<a href=#weapons>Weapons</a></td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16><img src=people.gif width=22 height=16 border=0 align=absmiddle alt=NPCs></td><td>&nbsp;<a href=#npcs>NPCs</a></td></tr>
+		<tr><td><img src=../branch.gif align=absmiddle border=0 width=16 height=16><img src=backpack.gif width=16 height=16 border=0 align=absmiddle alt=Inventory></td><td>&nbsp;<a href=#inventory>Inventory</a></td></tr>
+		<tr><td><img src=../branch_end.gif align=absmiddle border=0 width=16 height=16><img src=other.gif width=19 height=16 border=0 align=absmiddle alt=Other></td><td>&nbsp;<a href=#other>Other</a></td></tr>
+	<tr><td colspan=2><img src=../medal.gif align=absmiddle alt="Honorable Mentions" border=0 width=16 height=16> <a href=mentions.html>Honorable Mentions</a></td></tr>
+	<tr><td colspan=2><img src=../links.gif align=absmiddle alt=Links border=0 width=16 height=16> <a href=./#links>Links</a></td></tr>
+	<tr><td colspan=2><a href=/forum/>Forums</a></td></tr>
+</table>
+</td>
+
+<td width=1% id=a></td>
+
+<td width=25%><a name=note><b>Note:</b>
+
+<p><div align=justify>
+<li>blank cells = inapplicable or definitely unknown<br>
+<img src=unknown.gif alt=unknown width=8 height=8> = a lesser/unverified unknown<br>
+<img src=yes.gif alt=yes border=0 width=8 height=8> = yes, <img src=no.gif alt=no border=0 width=8 height=8> = no
+<li>NPC: <a href=http://en.wikipedia.org/wiki/Non-player_character>non-player characters</a> (computer-controlled characters)
+<li>RPG: <a href=http://en.wikipedia.org/wiki/Role-playing_game>role-playing game</a>
+<li><a href=http://web.archive.org/><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>: old/dead website archive
+<li><a href=http://en.wikipedia.org/><img src=http://en.wikipedia.org/favicon.ico align=absmiddle border=0 width=16 height=16 alt=Wikipedia></a>: <a href=http://en.wikipedia.org/wiki/Wikipedia>Wikipedia</a> is an encyclopedia (that anyone can edit) which provides more detailed info and is mostly used here on feature terms (<i>genre</i>, <i>publisher</i>, <i>developer</i>, etc); the icon won't show
+</td>
+
+<td><div align=justify><li>To better see the table, reduce the font size and/or increase the screen resolution (the larger the better). This page was designed for at least 1024x768 screen resolution.
+<li>Navigation: I've found using the keyboard to move around is faster than the mouse (assuming you have a fast keyboard repeat rate and low key press delay setup in your BIOS and OS) but keyboard horizontal movement is <i>really</i> slow in Internet Explorer (IE). Mousewheels help, too, providing they scroll smoothly enough. <a href=http://www.ntu.edu.sg/CITS/SoftwareDirectory/Utilities/Desktop.htm>Pointix's Scroll++</a> (<a href=http://astalavista.box.sk/cgi-bin/robot?srch=pointix+scroll&submit=+search+>crack</a>) scrolling software works great, too, but IE doesn't work with it horizontally, and vertical scrolling is way too fast; plus Pointix seems to be defunct. Some mice (<a href=http://www.logitech.com/>Logitech</a>) have an "autoscroll" feature that works well and Microsoft's horizontal tiltwheel mice work too (but not very smoothly). But the <i>best</i> way to navigate this table is with <a href=http://perso.wanadoo.fr/marc.boullet/ext/extensions-en.html>Scrollbar Anywhere</a>, a <a href=http://mozilla.org/>Mozilla Firefox</a> extension.
+</td>
+</tr>
+</table>
+
+<div id=c>Table downloading and/or rendering...</div>
+
+<a name=header></a>
+<table border style="border: solid #444444 1px;" rules=all cellpadding=0 cellspacing=0 width=100% class=sortable id=table>
+<thead>
+<!--<tr align=center bgcolor=#000000>
+<th colspan=3 class=sortable><br></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan=3></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+<th colspan=3></th>
+</tr>-->
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</thead>
+
+<tbody>
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><acronym title="year released">circa</acronym></td>
+
+	<td>1996</td>
+	<td>1997</td>
+	<td>1998</td>
+	<td>1999</td>
+	<td>2000</td>
+	<td>1995</td>
+	<td>2000</td>
+	<td>1998 (<a href=../links.html>Opposing Force</a>: 1999)</td>
+	<td colspan=2>2000</td>
+	<td>1999</td>
+
+<td colspan=3 id=a><acronym title="year released">circa</acronym></td>
+
+	<td>1998</td>
+	<td>1998</td>
+	<td>2000</td>
+	<td colspan=3>1999</td>
+	<td colspan=2>2000</td>
+
+<td align=right colspan=3 id=a><acronym title="year released">circa</acronym></td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Video_game_genres class=l>genre</a></td>
+
+	<td colspan=5>action-adventure</td>
+	<td colspan=2>building, chat, virtual reality</td>
+	<td>action</td>
+	<td>action-adventure</td>
+	<td>action</td>
+	<td>action-adventure</td>
+
+<td colspan=3 id=a>genre</td>
+
+	<td colspan=6>action-adventure</td>
+	<td>action-strategy</td>
+	<td>action-adventure-RPG</td>
+
+<td align=right colspan=3 id=a>genre</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Video_game_publisher class=l>publisher</a></td>
+
+	<td colspan=5><a href=../links.html>Eidos</a></td>
+	<td colspan=2><a href=../links.html>Activeworlds.com, Inc.</a></td>
+	<td><a href=../links.html>Sierra</a></td>
+	<td></td>
+	<td></td>
+	<td><a href=../links.html>Infogrames</a></td>
+
+<td colspan=3 id=a>publisher</td>
+
+	<td><a href=../links.html>Electronic Arts</a></td>
+	<td colspan=2><a href=../links.html>Eidos</a></td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td><a href=../links.html>SegaSoft</a></td>
+	<td><a href=../links.html>Eidos</a></td>
+
+<td align=right colspan=3 id=a>publisher</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Video_game_developer class=l>developer</a></td>
+
+	<td colspan=5><a href=../links.html>Core Design</a></td>
+	<td colspan=2><a href=../links.html>Activeworlds, Inc.</a></td>
+	<td><a href=../links.html>Valve</a><br>(<acronym title="Opposing Force">OF</acronym>: <a href=../links.html>Gearbox</a>)</td>
+	<td><a href=../links.html>Ritual</a></td>
+	<td><a href=../links.html>Raven</a></td>
+	<td><a href=../links.html>Appeal</a></td>
+
+<td colspan=3 id=a>developer</td>
+
+	<td><a href=../links.html>Dreamworks</a></td>
+	<td colspan=2><a href=../links.html>Looking Glass</a></td>
+	<td><a href=../links.html>Surreal</a></td>
+	<td><a href=../links.html>LucasArts</a></td>
+	<td><a href=../links.html>Red Orb</b></td>
+	<td><a href=../links.html>Segasoft</a></td>
+	<td><a href=../links.html>Ion Storm</a></td>
+
+<td align=right colspan=3 id=a>developer</td>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=19>
+<th colspan=3 align=left><a name=engine></a><acronym onclick="toggleItem('engineTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=engine.gif width=24 height=19 border=0 align=absmiddle alt=Engine> ENGINE</a></th>
+<th colspan=7 id=w><img src=engine.gif width=24 height=19 border=0 align=absmiddle alt=Engine> ENGINE</th>
+<th colspan=6 id=w><img src=engine.gif width=24 height=19 border=0 align=absmiddle alt=Engine> ENGINE</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('engineTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=engineTbody>
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Game_engine class=l>engine</a></td>
+
+	<td colspan=5>Proprietary</td>
+	<td colspan=2>Criterion <a href=http://en.wikipedia.org/wiki/RenderWare>RenderWare</a></td>
+	<td><a href=http://en.wikipedia.org/wiki/GoldSrc>GoldSrc</a></td>
+	<td colspan=2>modified <a href=http://en.wikipedia.org/wiki/Quake_III_engine>Quake III</a></td>
+	<td><a href=http://www.appeal.be/products/page2/prod_ch2.htm>Paradise</a> <a href=http://web.archive.org/web/*/www.appeal.be/products/page2/prod_ch2.htm><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+<td colspan=3 id=a>engine</td>
+
+	<td>Proprietary</td>
+	<td colspan=2><a href=http://en.wikipedia.org/wiki/Dark_engine>Dark Engine</a></td>
+	<td><!--<a href=http://www.surreal.com/company-riot.html>--><a href=http://en.wikipedia.org/wiki/Riot_engine>Riot</a></td>
+	<td>modified <a href=http://en.wikipedia.org/wiki/SITH_Engine>SITH Engine</a></td>
+	<td><a href=http://en.wikipedia.org/wiki/NetImmerse>NetImmerse</a></td>
+	<td>Proprietary</td>
+	<td>modified <a href=http://en.wikipedia.org/wiki/Unreal_Engine>Unreal Engine</a></td>
+
+<td align=right colspan=3 id=a>engine</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Video_game_developer class=l>developer</a></td>
+
+	<td colspan=5><a href=../links.html>Core Design</a></td>
+	<td colspan=2><a href=../links.html>Activeworlds, Inc.</a></td>
+	<td colspan=3><a href=../links.html>id</a></td>
+	<td><a href=../links.html>Appeal</a></td>
+
+<td colspan=3 id=a>developer</td>
+
+	<td><a href=../links.html>Dreamworks</a></td>
+	<td colspan=2><a href=../links.html>Looking Glass</a></td>
+	<td><a href=../links.html>Surreal</a></td>
+	<td><a href=../links.html>LucasArts</a></td>
+	<td><!--http://www.ndl.com/netimmerse/>--><a href=../links.html>NDL</td>
+	<td><a href=../links.html>Segasoft</a></td>
+	<td><a href=../links.html>GT Interactive</a></td>
+
+<td align=right colspan=3 id=a>developer</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=2 id=a>type</td>
+
+	<td colspan=10><a href=http://en.wikipedia.org/wiki/Polygon>polygon</a></td>
+	<td>polygon/<a href=http://en.wikipedia.org/wiki/Voxel>voxel</a></td>
+
+<td colspan=3 rowspan=2 id=a>type</td>
+
+	<td colspan=8>polygon</td>
+
+<td align=right colspan=3 rowspan=2 id=a>type</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=5><a href=http://en.wikipedia.org/wiki/Portal_rendering>portal</a></td>
+	<td colspan=2>terrain</td>
+	<td colspan=3>portal</td>
+	<td>terrain</td>
+	<td>terrain & portal</td>
+	<td colspan=3>portal</td>
+	<td colspan=2></td>
+	<td>terrain</td>
+	<td>terrain & portal</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left rowspan=13 id=a><a href=http://en.wikipedia.org/wiki/Atmosphere class=l>atmo- spheric</a>/ <a href=http://en.wikipedia.org/wiki/Natural_environment class=l>environ- mental</a> effects</td>
+
+<td rowspan=4 id=a class=l><a name=water><a href=http://en.wikipedia.org/wiki/Water class=l>w<br>a<br>t<br>e<br>r</a></td>
+<td align=right id=a><a href=http://en.wikipedia.org/wiki/Current_(fluid) class=l>current</a></td>
+
+	<td colspan=2 rowspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8> (+ swaying bodies/leaves)</td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2>customizable ("warp" command)</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td rowspan=13 id=a>atmo- spheric/ environ- mental effects</td>
+<td rowspan=4 id=a class=l>w<br>a<br>t<br>e<br>r</td>
+<td align=right id=a>current</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=left id=a>current</td>
+<td align=center rowspan=4 id=a class=l>w<br>a<br>t<br>e<br>r</td>
+<td align=right rowspan=13 id=a>atmo- spheric/ environ- mental effects</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a><acronym title=dripping><a href=http://en.wikipedia.org/wiki/Drop_(liquid) class=l>drops</a></acronym></td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=6><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right id=a><acronym title=dripping>drops</acronym></td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=left id=a><acronym title=dripping>drops</acronym></td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Ripple_(physics) class=l>ripples</a></td>
+
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2 rowspan=2>customizable (action commands)</td>
+	<td>waves</td>
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right id=a>ripples</td>
+
+	<td rowspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2 rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2 rowspan=2><img src=yes.gif alt=yes border=0 width=8 height=8> (+ splash waves & underwater bubbles)</td>
+	<td rowspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td rowspan=2><img src=yes.gif alt=yes border=0 width=8 height=8> (+ underwater bubbles)</td>
+
+<td align=left id=a>ripples</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Splash_(fluid_mechanics) class=l>splash</a></td>
+
+	<td colspan=5><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right id=a>splash</td>
+<td align=left id=a>splash</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td rowspan=7 id=a class=l><a name=weather><a href=http://en.wikipedia.org/wiki/Weather class=l>w<br>e<br>a<br>t<br>h<br>e<br>r</a></td>
+<td align=right id=a><a href=http://en.wikipedia.org/wiki/Cloud class=l>clouds</a></td>
+
+	<td colspan=2 rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2>moving</td>
+	<td colspan=2 rowspan=5>customizable</td>
+	<td>moving</td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td rowspan=7 id=a class=l>w<br>e<br>a<br>t<br>h<br>e<br>r</td>
+<td align=right id=a>clouds</td>
+
+	<td>moving</td>
+	<td rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>moving</td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>moving</td>
+	<td></td>
+	<td colspan=2>moving</td>
+
+<td align=left id=a>clouds</td>
+<td rowspan=7 id=a class=l>w<br>e<br>a<br>t<br>h<br>e<br>r</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Fog class=l>fog</a></td>
+
+	<td rowspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><a href=#lighting>volumetric</a></td>
+	<td>underwater</td>
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right id=a>fog</td>
+
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=unknown.gif alt=unknown width=8 height=8></td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><a href=#lighting>volumetric</a></td>
+
+<td align=left id=a>fog</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Rain class=l>rain</a></td>
+
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8> (+ surface splash)</td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right id=a>rain</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8> (+ surface splash)</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=left id=a>rain</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Snow class=l>snow</a></td>
+
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right id=a>snow</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=unknown.gif alt=unknown width=8 height=8></td>
+	<td colspan=2>yes</td>
+	<td></td>
+	<td></td>
+
+<td align=left id=a>snow</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a>other</td>
+
+	<td colspan=2></td>
+	<td colspan=2>mist</td>
+	<td></td>
+	<td></td>
+	<td>clear-cloudy transition, lightning [+ strikes bridge (breaking) and tree (burning)]</td>
+	<td></td>
+	<td></td>
+
+<td align=right id=a>other</td>
+
+	<td>mist</td>
+	<td></td>
+	<td></td>
+	<td>lightning</td>
+	<td></td>
+	<td></td>
+	<td></td>
+	<td></td>
+
+<td align=left id=a>other</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right rowspan=2 id=a><a href=http://en.wikipedia.org/wiki/Wind class=l>wind</a></td>
+
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=4><a href=#character>Lara</a>'s ponytail(s)</td>
+	<td colspan=2 rowspan=2>customizable (object animation)</td>
+	<td rowspan=2>fans</td>
+	<td rowspan=2>leaves, tapestries</td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td rowspan=2></td>
+
+<td align=right rowspan=2 id=a>wind</td>
+
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td rowspan=2>pulsating plants?</td>
+	<td colspan=4 rowspan=2></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td rowspan=2></td>
+
+<td align=left rowspan=2 id=a>wind</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>flags</td>
+	<td>dripping <a href=#water>water</a> off <a href=#character>Lara</a>, gong, laundry, tapestries</td>
+	<td>fan vent cobwebs, a door</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 rowspan=2 id=a>other</td>
+
+	<td rowspan=2>dust (shooting darts)</td>
+	<td rowspan=2></td>
+	<td rowspan=2>cold breath (<a href=#character>Lara</a>), dust (shooting darts), earthquakes, quicksand, shaking, smoke (gun muzzle, fire), steam (some Antarctica lights)</td>
+	<td rowspan=2>smoke (explosions, fire, gun muzzle, jeep & motorcycle exhaust, machineguns), steam (some floor grates)</td>
+	<td rowspan=2>dust (stone impact)</td>
+	<td colspan=2 rowspan=2>customizable: smoke, steam</td>
+	<td colspan=3><a href=#camera>camera</a> shaking, smoke, steam (some pipes)</td>
+	<td rowspan=2>cold breath</td>
+
+<td align=right colspan=2 rowspan=2 id=a>other</td>
+
+	<td rowspan=2>object contact debris (dust)</td>
+	<td colspan=2>blood splats, gas (Burrick poison), smoke (fire, lava), steam (some pipes)</td>
+	<td rowspan=2>camera shaking, smoke (fire), steam</td>
+	<td rowspan=2>smoke (gun muzzle, explosions)</td>
+	<td rowspan=2></td>
+	<td rowspan=2>day-night light cycle, smoke</td>
+	<td rowspan=2>gas & smoke linger after explosions, steam; all 3 rise and disperse</td>
+
+<td align=left colspan=2 rowspan=2 id=a>other</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td>dust (cave claw hand scraping; <a href=#character>Julie</a>: landing & shimmying), lawn sprinkler <a href=#water>water</a> spray, smoke (+ chainsaw, flame sword, Gruff's pipe), water mist/spray</td>
+	<td>smoke (+ some pipes, sparks)</td>
+	<td></td>
+	<td>dust (grinding secret stone door), smoke (+ extinguished flares), steam (+ some grates)</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=2 id=a><a name=collision id=a><a href=http://en.wikipedia.org/wiki/Collision_detection class=l>collision detection</a></td>
+
+	<td colspan=4 rowspan=2>mostly 2D
+	<li><a href=#character>Lara</a> slides down vertically diagonal slopes</td>
+
+	<td rowspan=2><li><i>still</i> <a href=../tr/improve/#collision>screwed up</a>
+	<li>falling welded-thru door pushes Lara</td>
+
+	<td colspan=3>2D</td>
+	<td rowspan=2>mostly 2D (<a href=#character>Julie</a> adjusts feet & legs on slopes when standing)</td>
+	<td rowspan=2>2D</td>
+	<td rowspan=2></td>
+
+<td colspan=3 rowspan=2 id=a>collision detection</td>
+
+	<td rowspan=2>mostly 2D (walking dinos, but angle when fallen/dead)</td>
+	<td colspan=3 rowspan=2>2D</td>
+	<td rowspan=2>mostly 2D (<a href=#character>Indy</a> crawls parallel to slopes)</td>
+	<td rowspan=2>2D</td>
+	<td rowspan=2>mostly 2D (hoverboards & rovers angle vertically)</td>
+	<td rowspan=2>2D</td>
+
+<td align=right colspan=3 rowspan=2 id=a>collision detection</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>avatars</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Reflection_mapping class=l>environment mapping (reflection)</a></td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+	<td>"surfaces/objects reflect light and react to light sources"
+		<li>mirrors</td>
+
+	<td><a href=http://www.cubeit.com/ctimes/news/2000/08/news0622k.jpg>some floors</a>, <a href=#character>Lara</a>'s catsuit, doors (lockers, glass cabinet), VCI logo</td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><a href=#character>Gordon</a> (<acronym title="hazardous environmental">HEV</acronym> suit), <a href=#NPCs>NPCs</a> (security guard helmets, etc), enemies (alien warrior armor, etc)</td>
+	<td>metallic surfaces, non-translucent glass, many other things</td>
+	<td>console screens, some glass</td>
+	<td><a href=#water>water</a> reflects backdrop/terrain</td>
+
+<td colspan=3 id=a>environment mapping (reflection)</td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2></td>
+
+	<td>some marble floors
+	<li>mirrors</td>
+
+<td align=right colspan=3 id=a>environment mapping (reflection)</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Inverse_kinematics class=l>inverse kinematics</a></td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=unknown.gif alt=unknown width=8 height=8></td>
+	<td></td>
+	<td colspan=6></td>
+
+<td colspan=3 id=a>inverse kinematics</td>
+
+	<td colspan=3></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td></td>
+
+<td align=right colspan=3 id=a>inverse kinematics</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=2 id=a><a name=lighting><a href=http://en.wikipedia.org/wiki/Lighting class=l>lighting</a></td>
+
+	<td rowspan=2>static (white)</td>
+
+	<td rowspan=2>dynamic (white)
+		<li>flickering
+		<li>fire, flamethrowers, flares, gunshots</td>
+
+	<td colspan=3>dynamic (colored)
+		<li>smooth-fading
+		<li>fire, flares, gunshots</td>
+
+	<td colspan=2>static
+		<li>single world light source</td>
+
+	<td colspan=3>dynamic (colored)</td>
+	<td>static</td>
+
+<td colspan=3 rowspan=2 id=a>lighting</td>
+
+	<td>static</td>
+
+	<td colspan=2>dynamic
+		<li>fire (fire arrows)</td>
+
+	<td colspan=5>dynamic (colored)</td>
+
+<td align=right colspan=3 rowspan=2 id=a>lighting</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td><li>electricity, explosions, fire, flares</td>
+
+	<td><li>spotlighting
+		<li>binoculars, elementals, jeep breaklights, lasersight, motorcycle breaklight & headlight, some enemy weapon fire, torches
+		<li><a href=http://en.wikipedia.org/wiki/Volumetric_lighting>volumetric</a></td>
+
+	<td><li>flickering
+		<li>binoculars, deep sea diving suit flashlight, headset, revolving alarm light</td>
+
+	<td>white</td>
+
+	<td>colored
+		<li>ambient & directional
+		<li>position- able
+		<li><a href=../../rw/terms.html#prelight>vertex prelighting</a></td>
+
+	<td><li>flickering
+		<li>alien tentacle lights, explosions, fire, flashlight</td>
+
+	<td>asteroid fragments, crystals (some), explosions, flamethrower, lightning</td>
+	<td>flickering</td>
+	<td>colored</td>
+	<td>white</td>
+
+	<td>white
+		<li>fire (+ elementals)</td>
+
+	<td>colored
+		<li>flares, gas lanterns</td>
+
+	<td>fire (dragon breath, flaming sword, regular fire); "dark-lights"</td>
+
+	<td>fire, flares, lanterns?, lighter</td>
+	<td></td>
+	<td>explosions, object building</td>
+
+	<td>alarm lights, Dragon's Tooth Sword, explosions, fire, flamethrower, flares (+ darts), flashlight, lamps (desk/table), plasma gun projectiles
+		<li>flickering</td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a name=sprite><a href=http://en.wikipedia.org/wiki/Particle_system class=l>particle effects</a>
+<p>(colliding projectiles &<br>non-colliding <a href=http://en.wikipedia.org/wiki/Sprite_(computer_graphics) class=l>sprites</a>)</td>
+
+	<td colspan=2>shooting lava</td>
+	<td>bat swarms, blood squirts, breath (cold/poison), fire, flares, gun bullet shells, explosion debris, fish schools, smoke, steam</td>
+	<td>beetle swarms, blood squirts, breaking object debris, electricity, enemy ground emergence, explosion debris, fire, flares, gun bullet shells & impact debris, moth swarms, smoke, <a href=#water>water</a> dripping off <a href=#character>Lara</a></td>
+	<td>bat & bug swarms, fire, rat packs, smoke, steam, welding torch sparks</td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>breaking object debris (glass, metal, wood shards); radiation particles, scattering crate objects, sparks</td>
+	<td>blowing leaves, explosion debris, fly swarms, settling feathers after giant bird deaths, some weapon effects</td>
+	<td>Borg body disappearance, electricity, stasis "fireflies", plasma, smoke, sparks, steam, transporter effects</td>
+	<td>cold breath, healing/saving, shooting lava, vulture-like bird swarms</td>
+
+<td colspan=3 id=a>particle effects
+<p>(colliding projectiles &<br>non-colliding sprites)</td>
+
+	<td>object contact debris (dust)</td>
+	<td colspan=2>fly swarms, gas, lava (shooting), smoke, sparks (fire, streetlights), steam, <a href=#water>water</a> (dripping, falling, fountains)</td>
+	<td>broken barrels/bodies, ice crystal sphere, falling ice sword crystals, other falling things, whirlwinds (mini-tornadoes)</td>
+	<td>falling rocks, explosion debris</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>explosions</td>
+	<td>breaking objects: glass/metal/wood shards; explosions, faucet (sink, shower) <a href=#water>water</a> drops, fire, fish schools, flies, gas, gun bullet shells, smoke, sparks (cleaning bot, machinery, etc), steam</td>
+
+<td align=right colspan=3 id=a>particle effects
+<p>(colliding projectiles &<br>non-colliding sprites)</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';>
+<td align=left colspan=3 rowspan=4 id=a><a name=physics><a href=http://en.wikipedia.org/wiki/Physics_engine class=l>physics</a>
+<p>(bouyancy, friction, gravity, inertia, momentum, etc)
+<p>see <a href=#rideableobjects class=l>rideable objects</a> &<br>
+<a href=#collision class=l>collision detection</a></td>
+
+	<td colspan=5><a href=#character>Lara</a>, <a href=#NPCs>animals/enemies</a></td>
+	<td colspan=2 rowspan=4>avatars</td>
+	<td colspan=4><a href=#character>player character</a>, animals/enemies</td>
+
+<td colspan=3 rowspan=4 id=a>physics
+<p>(bouyancy, friction, gravity, inertia, momentum, etc)
+<p>see <a href=#rideableobjects class=l>rideable objects</a> &<br>
+<a href=#collision class=l>collision detection</a></td>
+
+	<td colspan=6>player character, animals/enemies</td>
+
+	<td rowspan=4>avatars: bounce off forcefields, buildings, avatars, rovers, turrets, etc; weapon recoil
+		<li>bounce off ground when jettisoned: jitters & objects (+ spin)</td>
+
+	<td>player character, animals/enemies</td>
+
+<td align=right colspan=3 rowspan=4 id=a>physics
+<p>(bouyancy, friction, gravity, inertia, momentum, etc)
+<p>see <a href=#rideableobjects class=l>rideable objects</a> &<br>
+<a href=#collision class=l>collision detection</a></td>
+
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td>Thor's hammer, sand</td>
+	<td colspan=3><a href=#character>Lara</a>'s ponytail (blowing, floating, settling), vehicles</td>
+	<td rowspan=3></td>
+
+	<td rowspan=3><li>gravity: body guts, bouncing grenades, debris, explosions, floating crates, sparks
+		<li>slippery ice/<a href=#water>water</a>
+		<li>fan blade air current</td>
+
+	<td rowspan=3><li>knock asteroid fragments off ledges which break on hitting ground
+		<li>sliding doors push <a href=#character>Julie</a>
+		<li>rope-suspended platforms pivot from Julie's weight</td>
+
+	<td rowspan=3>low gravity, plasma beam force (<a href=#weapons>weapons</a>, conduits)</td>
+	<td rowspan=3></td>
+
+	<td rowspan=3><li>objects: stackable, fall over, fly through air, impact, float (wood shards, etc)
+		<li>bullet impact force moves things
+		<li>very accurate, but slow
+		<li><a href=http://trespasser.com/physics.html>more info</a> <a href=http://web.archive.org/web/*/trespasser.com/physics.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>/<a href=http://www.dreamworksgames.com/Games/Trespasser/features/htmls/physics.html>more info</a> <a href=http://web.archive.org/web/*/www.dreamworksgames.com/Games/Trespasser/features/htmls/physics.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>, <a href=http://trespasser.com/audio.html>audio</a> <a href=http://web.archive.org/web/*/trespasser.com/audio.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+	<td colspan=2 rowspan=2><li>objects: stackable, fall down (but don't usually angle correctly), fly through air, impact, move other objects slightly (depending on size), (+ <a href=#character>Garrett</a> & enemies) can block doors from closing or opening fully (doors can push small objects)
+		<li>floating barrels, crates, & rubble
+		<li>most arrows arc when shot
+		<li>deployed rope arrows settle into place
+		<li>some objects block doors from opening and/or can be pushed by them
+		<li>weight-sensitive columns & floor tiles</td>
+
+	<td rowspan=3>body guts, broken barrels, ice crystals, rocks/snowballs (+ rolling, break)</td>
+	<td rowspan=3>rocks, working clock gears</td>
+	<td rowspan=3></td>
+
+	<td rowspan=3><li>bobbing/floating: bodies, shards (wood), trash bags/cans (which hold up <a href=#character>player character</a>)
+		<li>swaying: ceiling flourescant lights, hanging: birdcages, carcasses, chandeliers, closet coats
+		<li>bouncing/ricocheting: basketball; cardboard boxes & trash bags/cans (when thrown on oil drum fire)
+		<li>utility push cart momentum
+		<li>slippery ice
+		<li>gas moves & dissipates</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td>rolling barrels/drums richocet off walls/edges</td>
+	<td colspan=2>bouncing bullet shells & grenades</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td></td>
+	<td>icicles, stalagmites</td>
+
+	<td><li><a href=#character>Lara</a>'s body weight pulls levers and pushes a floor down
+		<li>bullet impact force pushes some enemies back and knocks a boulder off a column
+		<li>skeletons fall off edges
+		<li>large hanging stone blocks, scales, stone block columns, sand, train</td>
+
+	<td></td>
+
+	<td><li>floating diving helmets
+		<li>deployed vine arrows settle into place
+		<li><a href=#character>Garrett</a>'s body stops garage doors</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';>
+<td align=left colspan=3 rowspan=3 id=a><a name=shadows><a href=http://en.wikipedia.org/wiki/Shadow class=l>shadows</a></td>
+
+	<td colspan=5>polygonal</td>
+	<td colspan=5>polygonal</td>
+	<td rowspan=3>voxel ("dynamic soft shadow generation")</td>
+
+<td colspan=3 rowspan=3 id=a>shadows</td>
+
+	<td rowspan=3><li>in-<a href=#texture>texture</a>, dynamic, real-time (- <a href=#character>Anne</a>'s body)
+		<li>buildings/dinosaurs/objects
+		<li>some vertical angle adjustment</td>
+
+	<td colspan=2 rowspan=3><li>prerendered, static
+		<li>buildings/objects</td>
+
+	<td rowspan=3><li>masked <a href=#texture>textures</a>
+		<li>dynamic, real-time (all characters)
+		<li>vertical angle adjustment
+		<li>multiple light source position adjustment</td>
+
+	<td rowspan=3>polygonal (<a href=#character>Indy</a>), dynamic</td>
+	<td rowspan=3></td>
+
+	<td colspan=2>polygonal</td>
+
+<td align=right colspan=3 rowspan=3 id=a>shadows</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';>
+	<td colspan=4>ovalular; size (width/length adjustment): <a href=#character>Lara</a> (dynamic), <a href=#NPCs>animals/enemies</a>/darts (static)</td>
+	<td rowspan=2>Lara only, moving fan blades</td>
+	<td colspan=2 rowspan=2>customizable</td>
+
+	<td colspan=3><a href=#character>player character</a>, <a href=#NPCs>NPCs, aliens/enemies</a>: horizontal, flat (2D); dynamic</td>
+
+	<td rowspan=2>avatars & rovers
+		<li>static, angle adjustment</td>
+
+	<td rowspan=2><li>ovalular; size (width/length adjustment)</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=3>horizontal, flat (2D)</td>
+	<td>some vertical angle adjustment</td>
+
+	<td><li>multiple light source position adjustment
+		<li>move with objects (gibs, limbs, falling debris, etc)</td>
+
+	<td>multiple light source: position adjustment, distance lengthening & shortening</td>
+	<td>circular, fading</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Skeletal_animation class=l>skeletal animation</a></td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>skeletal animation</td>
+
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+	<td colspan=2></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right colspan=3 id=a>skeletal animation</td></td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left rowspan=8 id=a><a name=texture><a href=http://en.wikipedia.org/wiki/Bitmap_textures class=l>texture</a></td>
+<td align=center rowspan=2 id=a><a href=http://en.wikipedia.org/wiki/Texture_filtering class=l>filter- ing</a></td>
+<td align=right id=a><a href=http://en.wikipedia.org/wiki/Bilinear_filtering class=l>bilinear</a></td>
+
+	<td colspan=10><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>voxels only</td>
+
+<td rowspan=8 id=a>texture</td>
+<td align=center rowspan=2 id=a>filter- ing</td>
+<td align=right id=a>bilinear</td>
+
+	<td colspan=8><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=left id=a>bilinear</td>
+<td rowspan=2 id=a>filter- ing</td>
+<td align=right rowspan=8 id=a>texture</td>
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Trilinear_filtering class=l>trilinear</a></td>
+
+	<td></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=4></td>
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=right id=a>trilinear</td></td>
+
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=6></td>
+
+<td align=left id=a>trilinear</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=center rowspan=2 id=a><a href=http://en.wikipedia.org/wiki/Texture_mapping class=l>map- ping</a></td>
+<td align=right id=a><a href=http://en.wikipedia.org/wiki/Bump_mapping class=l>bump</a></td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=6><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=center rowspan=2 id=a>map- ping</td>
+<td align=right id=a>bump</td>
+
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=left id=a>bump</td>
+<td rowspan=2 id=a>map- ping</td>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a><a href=http://en.wikipedia.org/wiki/Mipmap class=l>mip</a></td>
+
+	<td colspan=6><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=right id=a>mip</td>
+
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=left id=a>mip</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right colspan=2 id=a>detail/ <a href=http://en.wikipedia.org/wiki/Procedural_texture class=l>procedural</a></td>
+	<td colspan=5><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2>action commands</td>
+	<td>blood & alien/roach gut fluid, crowbar/ pipewrench (<acronym title="Opposing Force">OF</acronym>) hits (black: most surfaces; white: some glass), explosion blasts</td>
+	<td>flamethrower burns</td>
+	<td>weapon burns</td>
+	<td></td>
+<td align=right colspan=2 id=a>detail/ procedural</td>
+	<td></td>
+	<td colspan=3>blood pools/splats</td>
+	<td colspan=3></td>
+	<td>bullet holes, blood, glass hits, wood cracks</td>
+<td align=left colspan=2 id=a>detail/ procedural</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 id=a><a href=http://en.wikipedia.org/wiki/Palette_(computing) class=l>palette</a><br>(color bit depth)</td>
+	<td>8</td>
+	<td>8/16</td>
+	<td>8/16/24</td>
+	<td colspan=2>16/32</td>
+	<td colspan=2>8/16</td>
+	<td>16/24</td>
+	<td colspan=2>16/32</td>
+	<td>16/24/32</td>
+<td align=right colspan=2 id=a>palette<br>(color bit depth)</td>
+	<td>8/16</td>
+	<td>8</td>
+	<td>16 (only?)</td>
+	<td>8/16/24/32</td>
+	<td>16/24</td>
+	<td></td>
+	<td>16</td>
+	<td>16/32</td>
+<td align=left colspan=2 id=a>palette<br>(color bit depth)</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right colspan=2 id=a><a href=http://en.wikipedia.org/wiki/Image_resolution class=l>tile resolution</a></td>
+	<td colspan=3>64x64</td>
+	<td>probably 64x64 and 128x128</td>
+	<td></td>
+	<td>128x128 or 256x256</td>
+	<td>any power of 2</td>
+	<td>varies</td>
+	<td></td>
+	<td>32x32, 64x64, 128x128, 256x256</td>
+	<td></td>
+<td align=right colspan=2 id=a>tile resolution</td>
+	<td colspan=3>varies</td>
+	<td>32x32, 64x64, 128x128, 256x256</td>
+	<td></td>
+	<td></td>
+	<td>8x8, 16x16, 32x32, 64x64, 64x128, 128x64, 128x128</td>
+	<td></td>
+<td align=left colspan=2 id=a>tile resolution</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 id=a>other</td>
+	<td colspan=9></td>
+	<td><a href=http://en.wikipedia.org/wiki/Anisotropic_filtering>anisotropic filtering</a>, compressed</td>
+	<td></td>
+<td align=right colspan=2 id=a>other</td>
+	<td><a href=http://trespasser.com/art.html>more info</a> <a href=http://web.archive.org/web/*/trespasser.com/art.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+	<td colspan=2></td>
+	<td>multipass</td>
+	<td colspan=4></td>
+<td align=left colspan=2 id=a>other</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=2 id=a><a name=transparency>transparency<br>(<a href=http://en.wikipedia.org/wiki/Alpha_compositing class=l>alpha blending</a>)</td>
+
+	<td colspan=2 rowspan=2>full (masks)
+		<li><a href=#sprite class=l>sprites</a>: blood squirts, fire, <a href=#water>water</a> splashes</td>
+
+	<td colspan=2>semi/full: curtains/drapes, electricity, fire, glass, gun muzzle flash, light (beams, bulbs, shafts), shadows, smoke, steam, <a href=#water>water</a> (+ blood, ripples, splashes)</td>
+
+	<td rowspan=2>semi/full: blood drops, electricity, fire, flare smoke, glass (some computer displays, windows), gun muzzle flash, light beams (spotlights, sunrays), <a href=http://www.gamespot.com/pc/action/tombraiderchronicles/screens.html?page=84>X-rayed Lara</a> <a href=http://web.archive.org/web/20041211195332/http://www.gamespot.com/pc/action/tombraiderchronicles/screens.html?page=84><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+	<td><li>enabled through MMX or Direct3D rendering</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=4>water</td>
+
+<td colspan=3 rowspan=2 id=a>transparency<br>(alpha blending)</td>
+
+	<td colspan=6>water</td>
+	<td rowspan=2>camp forcefield boundaries, pre-built buildings/turrets, dirt/dust, explosions, healing rays, hoverboard trails, light beams, smoke, transium spots, weapon fire tracers</td>
+	<td rowspan=2>gas, glass, lasers, pepperspray mist, smoke, steam, water</td>
+
+<td align=right colspan=3 rowspan=2 id=a>transparency<br>(alpha blending)</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td>breath (cold/poison), fog/mist, reflections?, save/health crystals/gems</td>
+	<td>blood squirts, cobwebs, elementals, fading corpses, glass (jeep windshield, Von Croy's glasses), <a href=#character>Lara</a> (when <a href=#camera>camera</a> close), lava, lens flare, scroll (1), some enemy weapon explosions</td>
+	<td colspan=2>customizable (<a href=../../rw/terms.html#opacity>"opacity" RWX command</a>)</td>
+	<td>fading (body parts, broken objects, corpses, crate objects), ice, fire, glass, smoke, steam</td>
+	<td>explosions, fire, ghosts, glass (glasses, health vials, water ampules, windows), hologram (<a href=#character>Julie</a>), lens flare, lightning, light shafts, plant/flower petals (some), smoke, steam, wasp wings, water (+ dripping)</td>
+	<td>Borg lasers, electricity, forcefields, glass, light shafts, plasma, smoke, sparks, steam, transporter effects, weapon beams</td>
+	<td>cold breath?, healing?</td>
+	<td></td>
+	<td colspan=2 rolspan=2>fire, gas, glass, ice, smoke, steam, water (+ dripping), water arrow quivers</td>
+	<td>dirt/dust (falling), fading (corpses, broken barrels/crates), fire, glass (cups, light panels), glow, grimstone, hair bangs, ice, plant leaves, shimmering/sparkles, smoke, soul shadow, steam, wings</td>
+	<td>cobwebs, some glass (helicopter windshield, stained), <a href=#character>Indy</a> (when <a href=#camera>camera</a> close), some water</td>
+	<td>light shafts</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a>other</td>
+
+<td colspan=3><a href=#water>underwater</a> distortion</td>
+<td>lens flare, poison & underwater distortion</td>
+<td colspan=4></td>
+<td>lens flare, underwater distortion</td>
+<td><a href=http://en.wikipedia.org/wiki/Level_of_detail>level of detail (LOD)</a>, light flares (coronas), simple shaders</td>
+<td></td>
+
+<td colspan=3 id=a>other</td>
+
+<td></td>
+<td>max polygons before clipping: 1024</td>
+<td></td>
+<td>creature polygon count: 200-1000+, lens flare</td>
+<td colspan=3></td>
+<td>coronas, alcohol/poison distortion, <a href=#lighting>volumetric fog/light</a></td>
+
+<td align=right colspan=3 id=a>other</td>
+</tr>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3><a name=character></a></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=16>
+<th colspan=3 align=left><acronym onclick="toggleItem('characterTbody')" class=l title=show/hide>[+/-]</a></th>
+<th colspan=9 id=w><img src=character1.gif width=15 height=16 border=0 align=absmiddle alt="Player Character"> PLAYER CHARACTER</th>
+<th colspan=7 id=w><img src=character1.gif width=15 height=16 border=0 align=absmiddle alt="Player Character"> PLAYER CHARACTER</th>
+<th colspan=6 id=w><img src=character1.gif width=15 height=16 border=0 align=absmiddle alt="Player Character"> PLAYER CHARACTER</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('characterTbody')" class=l title=show/hide>[+/-]</a></th>
+</tr>
+
+
+<tbody id=characterTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=5 id=a><a href=http://en.wikipedia.org/wiki/Player_character class=l>player character</a></td>
+	<td colspan=5><a href=http://en.wikipedia.org/wiki/Lara_Croft>Lara Croft</a></td>
+	<td colspan=2 rowspan=5>customizable, various</td>
+
+	<td rowspan=5><a href=http://en.wikipedia.org/wiki/Gordon_Freeman>Gordan Freeman</a>; <acronym title="hazardous environmental">HEV</acronym> suit<br>
+		<acronym title="Opposing Force">OF</acronym>: <a href=http://en.wikipedia.org/wiki/Adrian_Shephard>Adrian Shepherd</a>; <a href=http://en.wikipedia.org/wiki/Hazardous_Environment_Combat_Unit#Powered_Combat_Vest>PCV vest</a></td>
+
+	<td rowspan=5><a href=http://en.wikipedia.org/wiki/Julie_Strain>Julie Strain</a>
+		<li>facial animation
+		<li>head looks at pickups and scripted objects
+		<li><a href=#water>water</a> level affects run speed & jump distance
+		<li>combo weapon actions
+		<li>hold 2 <a href=#weapons>weapons</a> (1 in each hand)</td>
+
+	<td rowspan=5>Alex Munro (<a href=http://en.wikipedia.org/wiki/Starfleet>Starfleet</a> officer)
+		<li>hazard suit
+		<li>facial expressions</td>
+
+	<td rowspan=5>Cutter Slade</td>
+
+<td colspan=3 rowspan=5 id=a>player character</td>
+
+	<td rowspan=5>Anne (traveller)
+		<li>breasts (+ health tattoo), controlable arm</td>
+
+	<td colspan=2>Garrett (thief)
+		<li>stamina (when holding bow)
+		<li>light gem</td>
+
+	<td rowspan=5>Rynn
+		<li>single <a href=#texture>skin</a></td>
+
+	<td rowspan=5>Indy (archeologist/<br>professor)</td>
+	<td rowspan=5>The Prince</td>
+	<td rowspan=5>4 corporation avatar types; male or female</td>
+
+	<td rowspan=5><a href=http://en.wikipedia.org/wiki/JC_Denton>JC Denton</a>
+		<li>bionic augmentations
+		<li>facial animation
+		<li>localized body damage (badly damaged legs cause body to drag along close to ground until health restored)</td>
+
+<td align=right colspan=3 rowspan=5 id=a>player character</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td colspan=4>ponytail</td>
+	<td rowspan=4></td>
+	<td rowspan=4>scouting orb links to mechanical eye</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td></td>
+
+	<td><li>breath (when "cold")
+		<li>smooth light fading when moving between dark/light areas</td>
+
+	<td><li>"highly detailed <a href=#texture>skin</a> without any polygon gaps"/"skinned joints"
+	<li><a href=#water>water</a> drips off
+	<li>cut-scene facial animation
+	<li>transparent when <a href=#camera>camera</a> close
+	<li>increasingly <a href=http://www.wsu.edu/~kgrytdal/trbug.html>distorted</a> <a href=http://web.archive.org/web/20040606080146/http://www.wsu.edu/~kgrytdal/trbug.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a> vision (zooming, flattening, widening) when poisoned
+	</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=3></td>
+	<td colspan=2>young Lara</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=3></td>
+	<td>training level</td>
+	<td>Ireland episode</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=4 id=a><a href=http://www.devmaster.net/wiki/Action class=l>actions/moves</a></td>
+
+	<td colspan=4>climb (ladder), <a href=http://www.wsu.edu/~kgrytdal/lara_dies.html>die (various)</a> <a href=http://web.archive.org/web/20040703081420/http://www.wsu.edu/~kgrytdal/lara_dies.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>, dive (+ somersault), grab edge (while jumping or dropping), idle, insert key/item, jump (+ flip), pick up items from ground (down on 1-knee, bend over, pick up), pull (+ up edges), push, ready/store weapon, roll (somersault), run, shimmy (horizontal ledges), shoot, sidestep, swim (+ wade shallow <a href=#water>water</a>), vault, walk</td>
+	<td rowspan=4>+ climb (+ grappling hook), search (files, drawers), sneak, swing (+ bars, bat, grappling ropes?--hook?), throw grappling hook, walk (+ tightrope: left/right balance)</td>
+	<td colspan=2>run, strafe, wait, walk (others configurable through <a href=../../rw/avatars.html#seq>SEQs</a>)</td>
+	<td rowspan=4>climb (ladder), crouch (+ run & walk), die (various), idle, jump, pick up (by moving over object), run, shoot, strafe, swim, walk<li><acronym title="Opposing Force">OF</acronym>: rope climb/swing</td>
+	<td rowspan=4>climb (rope, wall), crouch (+ roll: 4 directions, walk), die (various), grab edge (while jumping or dropping) & horizontal pole (while jumping, + wrap legs around), hug wall (+ sidestep), jump, pick up (by moving over object), place detonator, pull (+ up edges), push, ready/store weapon (2 hands), run, shimmy (horizontal edges/poles), shoot (+ alternate), strafe, swing (rope, monkeybar, sling), turn (crank, handle), vault, walk</td>
+	<td rowspan=4>climb (ladder), crouch, jump, shoot (+ alternate), sidestep, strafe, push button, run, use, walk</td>
+	<td rowspan=4>climb, die (various), jump, run, shoot, stomach lie (+ crawl), swim, walk</td>
+
+<td colspan=3 rowspan=4 id=a>actions/moves</td>
+
+	<td rowspan=4>crouch, pick up/drop/throw object, jump, shoot</td>
+	<td colspan=2>block, climb: ladder, wall (mantle)/rope; crouch (+ run/walk), drink, eat, jump, pick lock/pocket, lean (sideways, forwards), open/close doors & manhole covers, pick up/drop/throw object/body, ready/sheath weapon, run, swim, swing blackjack/sword, walk</td>
+	<td rowspan=4>block, climb ladder, crouch (+ 4-direction roll & "walk"), die, jump, pick up object, push, run, sneak, strafe, swim, swing weapon</td>
+	<td rowspan=4>climb, crawl, die (various), grab edge, jump, light lighter/torch, mark wall w/chalk, pull/push block/crate, pull up (edges), roll (directional), run, shimmy, shoot, sidestep, swim, vault, walk, whip (+ climb/swing)</td>
+	<td rowspan=4>jump, open doors, pick up object, pull up (edges), swing weapon</td>
+	<td rowspan=4>jump; object manipulation: build (+ rotate in 90&deg increments), dismantle, drop, jettison, modify, pick up (by moving over object); shoot, strafe</td>
+	<td rowspan=4>climb, crouch (+ walk), die (various), drink, eat, flush toilets, lean (sideways), jump, open/close cabinets/doors/drawers, pick up/drop/throw object, play (piano, pinball, pool), run, shoot, strafe, swim, turn: on faucets (sink, shower), ship wheels, valve; walk</td>
+
+<td align=right colspan=3 rowspan=4 id=a>actions/moves</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td colspan=3>light/throw flare, move <a href=#camera>camera</a> around while performing most moves, roll (+ <a href=#water>underwater</a>)</td>
+	<td rowspan=3></td>
+	<td rowspan=3>faster turning</td>
+	<td rowspan=3>hit gong</td>
+	<td rowspan=3>open sewer cover, play harp & piano, tilt/turn objects</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>open door (revolving handle)</td>
+	<td colspan=2>crawl, crouch (+ ready/holster/shoot some <a href=#weapons>weapons</a>), dash/sprint (+ jump & slide), swing (monkeybar), open door (+ crowbar), sidestep (+ shallow water)</td>
+
+	<tr valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=3></td>
+	<td><center>climb pole/rope (+ jump, slide, swing--rope only, turn), crouch (+ turn), dash/print (+ jump & end-crouch), open door (+: barging, hand--normal, kicking; ceiling, floor, underwater), jump (+ grab lever/pole/rope), light/throw torch, pick up items from pedestals, pull/push (+ hold), shimmy (+ corners)
+	<li>"[faster generic movements]"
+	<li>12 or 14 new; ~30 total</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>customizable (<a href=#multiplayer class=l>multiplayer</a>)</td>
+
+	<td colspan=5><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>customizable (multiplayer)
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td rowspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right colspan=3 id=a>customizable (multiplayer)</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Footprint class=l>footprints</a></td>
+
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+	<td><li>snow/sand
+		<li>disappear shortly thereafter
+		<li>Playstation version only?</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=6><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>footprints</td>
+
+	<td colspan=5><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=right colspan=3 id=a>footprints</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>footstep sound</td>
+
+	<td colspan=2>land/<a href=#water>water</a></td>
+	<td>land: dirt, hollow (wood), metallic (metal), mud/quicksand, rock (solid/gravel), soft (grass); water</td>
+	<td>land: dirt, metal, mud, rock (solid/gravel), sand, snow; water</td>
+	<td></td>
+	<td colspan=2>customizable (but pauses each time)</td>
+	<td colspan=2>land (varies), water (varies)</td>
+	<td>metal, ship floor (thin carpet), water</td>
+	<td>land: dirt/sand, grass, rice patties, stone, wood; water</td>
+
+<td colspan=3 id=a>footstep sound</td>
+
+	<td>land (varies), water (varies)</td>
+	<td colspan=2>land: carpet, dirt, gravel, metal, rock/stone, tile, wood; water (varies)</td>
+	<td>land: dirt, grass, metal, rock, snow, wood; water; armor</td>
+	<td>land: dirt, metal, rock, snow, wood</td>
+	<td colspan=2></td>
+	<td>land: dirt/grass, metal, linoleum; water</td>
+
+<td align=right colspan=3 id=a>footstep sound</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Polygon class=l>polygons</a> (#)</td>
+
+	<td>380, <a href=http://web.archive.org/web/*/www.primagames.com/news/interview/1073/>~230</a>?</td>
+	<td>540</td>
+	<td>784?, <s><a href=http://www.primagames.com/primagames.asp?WCI=NewsPage&WCE=1083>~300</a></s>?</td>
+	<td>984? (<a href=http://web.archive.org/web/*/gamespot.co.uk/pc.gamespot/action/lc4_uk/profile7.html>"200 more"</a>)</td>
+	<td></td>
+	<td colspan=2>varies</td>
+
+	<td colspan=4></td>
+
+<td colspan=3 id=a>polygons (#)</td>
+
+	<td colspan=6></td>
+	<td>~350-400</td>
+	<td></td>
+
+<td align=right colspan=3 id=a>polygons (#)</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=3 id=a><a name=model_textures id=a><a href=#texture class=l>textures</a> (<a href=http://en.wikipedia.org/wiki/Skin_(computing) class=l>"skin"</a>)</td>
+
+	<td colspan=5>normal</td>
+	<td colspan=2 rowspan=3>customizable</td>
+	<td rowspan=3>hazard suit/PCV vest (<acronym title="Opposing Force">OF</acronym>) on/off</td>
+	<td rowspan=3>jumpsuit (+ rips & loses pieces); leather stirrups & thong</td>
+	<td rowspan=3>normal, spacesuit</td>
+	<td rowspan=3>normal</td>
+
+<td colspan=3 rowspan=3 id=a>textures ("skin")</td>
+
+	<td colspan=3 rowspan=3>normal</td>
+	<td rowspan=3>armorless, armored</td>
+	<td colspan=2 rowspan=3>normal</td>
+	<td rowspan=3>depends on corp and gender</td>
+	<td rowspan=3>normal</td>
+
+<td align=right colspan=3 rowspan=3 id=a>textures ("skin")</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=3><font color=darkgrey>grey</font> tanktop</td>
+	<td colspan=2><font color=darkgreen>green</font> tanktop</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td>wetsuit, bomber jacket</td>
+	<td><a href=#locations>arctic (Antarctica)</a>, catsuit (London), desert (Nevada), jungle (South Pacific Islands)</td>
+	<td>training (<a href=#locations>Cambodia</a>)</td>
+	<td>catsuit, SAS(?) camoflauge</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left rowspan=5 id=a><a name=camera><a href=http://en.wikipedia.org/wiki/Virtual_camera class=l>view<br>(cam-<br>era)</a></td>
+<td align=right colspan=2 id=a><a href=http://en.wikipedia.org/wiki/Perspective_(visual) class=l>perspective (person)</a></td>
+
+	<td colspan=3>3rd</td>
+	<td colspan=4>1st/3rd</td>
+	<td>1st (3rd via console command)</td>
+	<td>3rd (1st via console command)</td>
+	<td>1st (3rd via console command)</td>
+	<td>1st</td>
+
+<td rowspan=5 id=a>view<br>(cam-<br>era)</td>
+<td align=right colspan=2 id=a>perspective (person)</td>
+
+	<td colspan=3>1st</td>
+	<td>1st/3rd</td>
+	<td colspan=2>3rd</td>
+	<td>1st/3rd</td>
+	<td>1st (3rd via console command)</td>
+
+<td align=left colspan=2 id=a>perspective (person)</td>
+<td align=right rowspan=5 id=a>view<br>(cam-<br>era)</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 rowspan=2 id=a><a name=pan><a href=http://en.wikipedia.org/wiki/Panning_(camera) class=l>pan</a></td>
+
+	<td colspan=4>static (locked behind character) & dynamic (keyboard-controlled)</td>
+	<td></td>
+	<td colspan=2>static (locked behind character) & dynamic (keyboard-controlled)</td>
+	<td colspan=4>dynamic (keyboard- & mouse-controlled)</td>
+
+<td align=right colspan=2 rowspan=2 id=a>pan</td>
+
+	<td colspan=4>dynamic (keyboard- & mouse-controlled)</td>
+	<td rowspan=2>static (locked behind <a href=#character>Indy</a>) & dynamic (keyboard-/ mouse-controlled)</td>
+	<td rowspan=2></td>
+	<td rowspan=2>static (locked behind avatar) & dynamic (keyboard-/ mouse-controlled)</td>
+	<td rowspan=2>dynamic (keyboard- & mouse- controlled)</td>
+
+<td align=left colspan=2 rowspan=2 id=a>pan</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=6></td>
+	<td>dynamic (+ mouse- controlled)</td>
+	<td></td>
+	<td>around player: 360&deg horizontal, 180&deg vertical</td>
+	<td></td>
+	<td>around player: 360&deg horizontal, 180&deg vertical</td>
+	<td colspan=3></td>
+	<td>around player: 360&deg horizontal, 180&deg vertical</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right colspan=2 rowspan=2 id=a><a href=http://en.wikipedia.org/wiki/Zoom_lens class=l>zoom</a></td>
+
+	<td colspan=4>slightly when panning</td>
+	<td></td>
+	<td colspan=2 rowspan=2>3 levels (3rd-person only)</td>
+	<td rowspan=2>continuous (console commands)</td>
+	<td rowspan=2></td>
+	<td rowspan=2>hazard team suit</td>
+	<td rowspan=2>7 levels (1 1st-person + binoculars, 6 3rd-person)</td>
+
+<td align=right colspan=2 rowspan=2 id=a>zoom</td>
+
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2>optionally after ~10 seconds while aiming bow</td>
+	<td rowspan=2>aiming bow (1st-person)</td>
+	<td rowspan=2>when panning in pseudo-1st-person view (camera closer to <a href=#character>Indy</a> and he turns transparent)</td>
+	<td></td>
+	<td rowspan=2>nerve center camp view, certain <a href=#weapons>weapons</a> (1st-person)</td>
+	<td rowspan=2>binoculars</td>
+
+<td align=left colspan=2 rowspan=2 id=a>zoom</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=3></td>
+	<td>binoculars/lasersight (1st-person)</td>
+	<td></td>
+	<td></td>
+	<td>Garret's mechanical eye</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=#water class=l>water</a> <a href=http://en.wikipedia.org/wiki/Tint class=l>tinting</a></td>
+
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>more accurate</td>
+	<td>fading</td>
+	<td></td>
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>water tinting</td>
+
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=3></td>
+
+<td align=right colspan=3 id=a>water tinting</td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td valign=top colspan=3><a name=design></a></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=19>
+<th colspan=3 align=left><acronym onclick="toggleItem('levelTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=level.gif width=24 height=19 border=0 align=absmiddle alt="Level/World Design"> <a href=http://en.wikipedia.org/wiki/Level_design class=l>LEVEL/WORLD DESIGN</a></th>
+<td colspan=7 id=w class=header><center><img src=level.gif width=24 height=19 border=0 align=absmiddle alt="Level/World Design"> LEVEL/WORLD DESIGN</td>
+<th colspan=6 id=w><img src=level.gif width=24 height=19 border=0 align=absmiddle alt="Level/World Design"> LEVEL/WORLD DESIGN</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('levelTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=levelTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=2 id=a># <a href=http://en.wikipedia.org/wiki/Level_(computer_and_video_games) class=l>levels</a>/<a href=http://en.wikipedia.org/wiki/Virtual_world class=l>worlds</a></td>
+
+	<td colspan=4>+ <a href=http://en.wikipedia.org/wiki/Assault_course>assault course</a>/<a href=#character>Lara</a>'s mansion/training</td>
+	<td rowspan=2>4 episodes; 15-20 levels</td>
+	<td colspan=2 rowspan=2>customizable (depending on how many worlds purchased)</td>
+
+	<td rowspan=2>17 maps + training
+	<li><acronym title="Opposing Force">OF</acronym>: boot camp</td>
+
+	<td rowspan=2>24 maps + training</td>
+	<td rowspan=2>16 maps + tutorial</td>
+	<td rowspan=2>5 regions</td>
+
+<td colspan=3 rowspan=2 id=a># levels/worlds</td>
+
+	<td rowspan=2>8</td>
+	<td rowspan=2>12 missions + training</td>
+	<td rowspan=2>16 missions</td>
+	<td rowspan=2>4 worlds; 14 levels</td>
+	<td rowspan=2>8 chapters; 17 levels</td>
+	<td rowspan=2>7 environments; 15 levels</td>
+	<td rowspan=2>1 million possible camps; customizable (depending on how many you want to build and others have built)</td>
+	<td rowspan=2>11 missions + training</td>
+
+<td align=right colspan=3 rowspan=2 id=a># levels/worlds</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td>15</td>
+	<td>18</td>
+	<td>20</td>
+	<td>37 (5 "episodes")</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a name=locations id=a>locations</td>
+
+	<td>Atlantis; Egypt; Qualopec, Peru; St. Francis' Folly</td>
+	<td>China (The Great Wall); Venice, Italy; sunken ship; Tibet; TR2 Gold: Las Vegas, Nevada, USA & Russia</td>
+	<td>India; London, England; Area 51 (Nevada, USA); South Pacific Islands; Antarctica; TR3 Gold: Scotland, English Channel, France</td>
+	<td>Anghor Wat, Cambodia (training level); Egypt (a citadel, Karnak, Cairo, Giza, Alexandria, Valley of the Kings)</td>
+	<td>Rome, Italy; Murmansk, Russia; Ireland; office tower block (Von Croft Industries? location unknown)</td>
+	<td colspan=2><a href=http://mauz.info/awworlds.html>partial world list</a>; customizable</td>
+	<td>Black Mesa Federal Research Facility (New Mexico, USA); Xen (alien world)</td>
+	<td>Eden (fantasy-<br>futuristic world)</td>
+	<td>Voyager (+ holodeck), Borg cube, Forge (space station), Scavenger ship (Klingon, classic Federation, other races)</td>
+	<td>Adelpha (parallel world)</td>
+
+<td colspan=3 id=a>locations</td>
+
+	<td>Site B (<a href=http://trespassersecrets.com/IsleSorna/>Isla Sorna</a> <a href=http://web.archive.org/web/*/trespassersecrets.com/IsleSorna/><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>: island near Costa Rica); <a href=http://www.dreamworksgames.com/Games/Trespasser/features/htmls/environment.html>more info</a> <a href=http://web.archive.org/web/*/www.dreamworksgames.com/Games/Trespasser/features/htmls/environment.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>; 15km&sup2</td>
+	<td colspan=2>a city (~19th century w/magic)</td>
+	<td>Drakan (fantasy-medieval world)</td>
+
+	<td>post World War II (1947)
+		<li>Utah, USA; Babylon, Iraq; Tian Shan River, Kazakstan; Nubia, Africa; Atlantic Ocean (freighter ship); Philippines; Technoctitlan, Mexico; Tibet</td>
+
+	<td>12th-century Persia
+		<li>dirigible, floating ruins, palace, prison</td>
+
+	<td>Visitor (alien planet)</td>
+	<td>the future
+		<li>Battery Park, Ellis Island, & Hell's Kitchen: New York City, New York, USA); Hong Kong, China; Paris, France; Vandenberg Air Force Base (USA); ocean lab, Area 51 (Nevada, USA)</td>
+
+<td align=right colspan=3 id=a>locations</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Cut_scene class=l>cutscenes</a></td>
+
+	<td colspan=2>4</td>
+	<td>11</td>
+	<td>37+</td>
+	<td colspan=3 rowspan=2></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2>many</td>
+	<td rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>cutscenes</td>
+
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td>13+</td>
+	<td>62+</td>
+	<td colspan=2></td>
+	<td>level transitions</td>
+
+<td align=right colspan=3 id=a>cutscenes</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Full-motion_video class=l>full-motion videos (FMVs)</a></td>
+
+	<td>10</td>
+	<td>7</td>
+	<td>3</td>
+	<td>13</td>
+	<td></td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>full-motion videos (FMVs)</td>
+
+	<td>3</td>
+	<td>17</td>
+	<td>16</td>
+	<td colspan=5></td>
+
+<td align=right colspan=3 id=a>full-motion videos (FMVs)</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a name=leveleditor></a><a href=http://en.wikipedia.org/wiki/Level_editor class=l>level/world editor</a></td>
+
+	<td colspan=5><a href=../tr/editor.html>Room Editor</a></td>
+	<td colspan=2>integrated</td>
+	<td>various</td>
+	<td></td>
+	<td></td>
+
+<td colspan=3 id=a>level/world editor</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2>DromEd</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=unknown.gif alt=unknown width=8 height=8></td>
+	<td></td>
+	<td>integrated</td>
+	<td><a href=http://www.deusex.com/sdk.htm>modified UnrealEd</a> <a href=http://web.archive.org/web/*/www.deusex.com/sdk.htm><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+<td align=right colspan=3 id=a>level/world editor</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/Linearity_(computer_and_video_games) class=l>linear level progression</a></td>
+
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>some (India/Antarctica & levels within Nevada, South Pacific Islands, & London)</td>
+	<td>some (interconnected levels), "strategic hubs"</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8> (but can return if accessible)</td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>linear level progression</td>
+
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2></td>
+
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8> (but can return if accessible)
+	<li>multiple routes & game endings</td>
+
+<td align=right colspan=3 id=a>linear level progression</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left rowspan=15 id=a><a name=environment_interaction>environ- mental inter- action</td>
+<td align=right colspan=2 id=a>collapsable<br>scenery</td>
+
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=2 rowspan=2>customizable</td>
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td rowspan=15 id=a>environ- mental inter- action</td>
+<td align=right colspan=2 id=a>collapsable<br>scenery</td>
+
+	<td colspan=5></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=left colspan=2 id=a>collapsable<br>scenery</td>
+<td align=right rowspan=15 id=a>environ- mental inter- action</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td rowspan=10 id=a>o<br>b<br>j<br>e<br>c<br>t<br>s</td>
+<td align=right id=a>break</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2><a href=#NPCs>animals/enemies</a> (when shot with grenade/rocket launcher), glass, walls (2)</td>
+	<td>animals/enemies (when shot with grenade launcher), chainlink fence, fuel tank, helicopter, lionhead gems, skeletons (heads & shields), star, stone ground & wall, vases, wood (barricades, bridges, some benches & crates, fence-doors, scaffolding)</td>
+	<td>crates, lock, vent</td>
+	<td>benches, bodies, books, cardboard boxes, chairs, desks, doors, glass, grates, meat, plants (cactus, shrubs) signs ("CAUTION: WET FLOOR" /\, outside post), turrets (free-standing, tank), vending machines, vents, wood (boards, crates)</td>
+	<td></td>
+	<td>distribution nodes, plasma filters</td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td rowspan=10 id=a>o<br>b<br>j<br>e<br>c<br>t<br>s</td>
+<td align=right id=a>break</td>
+
+	<td>chair</td>
+	<td colspan=2>flags (T2), glass windows, ice (T2: + jump on), tapestries, vases, wood (crates, doors)--threshold</td>
+	<td>bodies, dishes (glass cups, jugs, plates), rocks/snowballs, some walls, wood (barrels, some bridges, crates)</td>
+	<td>stained glass</td>
+	<td></td>
+	<td>destroy buildings/rovers</td>
+	<td>animals/enemies, basketballs, benches, boats, books, bottles (beer, wine), buddah statues, cabinets, /\ caution signs, ceiling fans, clay pots, fire extinguishers, flag poles, floor cushions, furniture (chairs, couches), hanging: (birdcages, carcasses, chandeliers, coats), glass windows, human skulls, incense burners, lab flasks, microscopes, oil drums, potted plants, soda cans, some doors/walls, lamps (some ceiling, table), mailboxes, newspapers, openable objects with strength value (see other), pillows, trash bags/cans, trophy cups, utility push cart, vases, water coolers, wicker baskets, wood (boards, crates, doors)</td>
+
+<td align=left id=a>break</td>
+<td rowspan=10 id=a>o<br>b<br>j<br>e<br>c<br>t<br>s</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a>drop</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=3>flares</td>
+	<td></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>C4</td>
+	<td></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>dynamite, hoti (fruit)</td>
+
+<td align=right id=a>drop</td>
+
+	<td>anything pickupable</td>
+	<td colspan=2>anything pickupable (except loot)</td>
+	<td>anything pickupable</td>
+	<td></td>
+	<td></td>
+	<td colspan=2>anything pickupable</td>
+
+<td align=left id=a>drop</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right rowspan=3 id=a><a name=object_pickup>pickup</td>
+
+	<td colspan=4>ammo, artifacts, keys, <a href=#weapons>weapons</a></td>
+	<td></td>
+	<td colspan=2 rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=4>ammo, <a href=#weapons>weapons</a></td>
+
+<td align=right rowspan=3 id=a><a name=object_pickup>pickup</td>
+
+	<td colspan=5>ammo, <a href=#weapons>weapons</a></td>
+	<td></td>
+	<td rowspan=3>see <a href=10six/ledos.html>LEDOs</a></td>
+	<td rowspan=3>ammo, armor (adaptive, ballistic), binoculars, candy bars, cigarette packs, credit sheets, fire extinguishers, flares, hazard materials suits, lockpicks, medkits, multitools, rebreathers, soda cans, soy food, vials (Ambrosia, crack), weapon mods, <a href=#weapons>weapons</a>
+		<li>see breakable objects</td>
+
+<td align=left rowspan=3 id=a>pickup</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td colspan=3>flares</td>
+	<td colspan=2></td>
+	<td rowspan=2></td>
+	<td rowspan=2>creepers, see <a href=#inventory>inventory</a></td>
+	<td rowspan=2></td>
+	<td rowspan=2></td>
+	<td rowspan=4>basketball, bats, batteries, bus sideview mirrors, cans (crushed beer/soda, paint), canteen, cement blocks, bones (+ rib cage, skull), boots, chairs, containers (crates, oil/fuel drums, plastic), helmet, hammer, I-beams, keycards, oil filters, mug (broken), phone cover (- pickupable), picture frame, pipes, radiator fans, rebar, rocks, shipping containers, table (portable), telephone (office-style), trailers, trashcans, wood: beams, planks, shards, sticks</td>
+	<td colspan=2>bodies, crates, hammers (large), "junk": bottles (green glass, grey), dishes (bowls, cups, pans, plates, pots), goblets, trays, vases; plants (potted); see <a href=#inventory>inventory</a> (- compass)</td>
+	<td rowspan=2>see <a href=#inventory>inventory</a></td>
+	<td rowspan=2>puzzle objects, treasure</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>secrets</td>
+	<td colspan=2>see <a href=#inventory>inventory</a></td>
+	<td colspan=2></td>
+	<td>barrels (small), basketball, bedroll, glass (after broken), masks, medallion</td>
+	<td>anchors, chart compass, flares, hankerchief, lab equipment, letters, Mechanist mace, sextant, strongbox</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a>pull</td>
+
+	<td colspan=3 rowspan=2>levers, switches, stone/wood blocks/crates</td>
+	<td rowspan=2>a body (pull only), air conditioners, compass marker stones, generator, large pots/vases, levers/switches, metal racks/shelves, stone block</td>
+	<td></td>
+	<td rowspan=2>chairs, crates, drums<li><acronym title="Opposing Force">OF</acronym>: + flat cart, /\ signs ("CAUTION: WET FLOOR")</td>
+	<td>buttons, crates, hay bales, levers, switches</td>
+	<td colspan=2 rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right id=a>pull</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td>levers</td>
+	<td rowspan=2>blocks/crates, levers/switches</td>
+	<td>crates?</td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=left id=a>pull</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right id=a>push</td>
+
+	<td></td>
+	<td colspan=2>customizable (through bot SDK)</td>
+	<td>boulder, crates, hay bales, tree trunk</td>
+
+<td align=right id=a>push</td>
+
+	<td>barrels, crates, rocks (boulders), sandbags</td>
+	<td>barrels, bodies, broken bot pieces, crates</td>
+	<td>barrels (broken pieces), body parts, rocks (boulders)/snowballs, some crates, some stone columns, some wall stones</td>
+	<td>crates?, stone vases?</td>
+	<td>basketballs, benches, cardboard boxes, /\ caution signs, crates, floor cushions, human skulls, incense burners, pans/pots, pillows, potted plants, small tables, trash bags/, canstrophy cups, utility push carts
+		<li>see pickubable objects</td>
+
+<td align=left id=a>push</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right id=a><a name=rideableobjects>ride</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>elevator, snowmobile (skidoo), speedboat</td>
+	<td>4-wheel all-terrain vehicle (ATV; quad bike), kayak, mine cart, boat, underwater propulsion unit</td>
+	<td>floor (sinks when <a href=#character>Lara</a>'s on, rises when Lara's off), jeep, motorcycle w/sidecar, sand (rising), train</td>
+	<td></td>
+	<td colspan=2 rowspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>anything falling (breaking floor, crates, etc), conveyor belts, elevators, helicopter-plane (<acronym title="Opposing Force">OF</acronym>), lifts, monorail, tram, Xen's revolving rocks</td>
+	<td>dung cart, hay (carried by crane), large machinery, sprinkler heads</td>
+	<td>elevators, some machinery</td>
+	<td>boat, Twon-Ha (like a camel)</td>
+
+<td align=right id=a>ride</td>
+
+	<td>anything falling (junked vehicles, etc), lift</td>
+
+	<td colspan=2>lifts
+		<li>Thief 2: + dumbwaiter</td>
+
+	<td>anything falling, Arohk (dragon), lifts</td>
+	<td>clock hands, jeep, mine cart, raft</td>
+	<td>boat?</td>
+	<td>anything being built, rovers</td>
+	<td>boats, elevators/lifts/platforms, manhole covers & grates (closing/opening), utility push carts, warehouse doors (sliding)</td>
+
+<td align=left id=a>ride</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right rowspan=2 id=a>throw</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=4>flares</td>
+	<td rowspan=2>grenades</td>
+	<td rowspan=2>shleeks</td>
+	<td colspan=2 rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right rowspan=2 id=a>throw</td>
+
+	<td rowspan=2>anything pickup-/push-/pullable</td>
+	<td colspan=2 rowspan=2>anything pickupable (except loot, papyrus/parchments/scrolls)</td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td></td>
+	<td colspan=2 rowspan=2>anything pickupable</td>
+
+<td align=left rowspan=2 id=a>throw</td>
+
+	<tr valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=3></td>
+	<td colspan=2><center>torches</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 id=a>buttons</td>
+	<td colspan=5><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2 rowspan=2>action commands</td>
+	<td colspan=4><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right colspan=2 id=a>buttons</td>
+
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>shoot (arrow)</td>
+	<td></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=left colspan=2 id=a>buttons</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=right colspan=2 id=a>levers/<br>switches</td>
+
+	<td colspan=5><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>shoot</td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right colspan=2 id=a>levers/<br>switches</td>
+
+	<td colspan=5><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+
+<td align=left colspan=2 id=a>levers/<br>switches</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=right colspan=2 rowspan=2 id=a><a name=envint_other>other</td>
+
+	<td rowspan=2></td>
+	<td rowspan=2>shoot bells</td>
+	<td rowspan=2>turn some lights on/off</td>
+
+	<td rowspan=2><li>fill/empty waterskins
+		<li>light torches
+		<li>shoot pulley & boulder
+		<li>extinguish torches if thrown in <a href=#water>water</a>
+		<li>burn some wooden floors & ropes</td>
+
+	<td rowspan=2><li>grappling hook ropes attach to surfaces <a href=#character>Lara</a> can climb/swing
+		<li>break off metal bars to use as crowbars</td>
+
+	<td colspan=2 rowspan=2>build</td>
+
+	<td rowspan=2><li>crumbling ledges
+		<li>step on roaches
+		<li>turn some lights on/off
+		<li><acronym title="Opposing Force">OF</acronym>: alien barnacle grappling hook sticks to spore-covered walls which can pull player towards and retrieve objects</td>
+
+	<td rowspan=2><li>dandelion-like flowers disperse seeds when walked into</td>
+	<td colspan=2 rowspan=2></td>
+
+<td align=right colspan=2 rowspan=2 id=a>other</td>
+
+	<td rowspan=2>shooting: above things moves them, outdoor phone buttons activates message</td>
+
+	<td colspan=2><li>bloodstains (+ washawayable)
+		<li>explode red barrels (by fire arrows)
+		<li>extinguish fire
+		<li>open/close: chests, doors, coffin lid
+		<li>pick locks
+		<li>knock human enemies unconcious by landing on their heads?</td>
+
+	<td rowspan=2><li>bloodstains
+		<li>burn: trees, wood (darkens after burnt)
+		<li>open/close: chests & doors</td>
+
+	<td rowspan=2>whip wraps around things so <a href=#character>Indy</a> can climb or swing across</td>
+	<td rowspan=2></td>
+
+	<td rowspan=2><li>build
+		<li>dust when landing
+		<li>hoverboard path trail</td>
+
+	<td rowspan=2 align=left><li>bloodstains
+		<li>burn: <a href=#NPCs>animals/enemies</a>, cardboard boxes, potted plants, trash bags/cans; use fire extinguisher to put out fire
+		<li>step on: cleaning bots (which eventually explode), cats, dogs, rats
+		<li>turn some lights on/off
+		<li>open/close: chests, doors, drawers (desk, file cabinet), fences, gates, grates, manhole covers, safes, vents, window shutters
+		<li>fire extinguisher spray can block laser beams?</td>
+
+<td align=left colspan=2 rowspan=2 id=a>other</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td><li>fire elementals relight torches?
+		<li>fire arrows grow fire elementals?
+		<li>hitting fire elementals shrinks them?</td>
+
+	<td><li>flares relight torches & gas lanterns
+		<li>better ladder handling (touch vs jump)
+		<li>tilt statue & telescope
+		<li>turn coatrack hook</td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=2 id=a>outdoor landscaping/<br>terrain design</td>
+
+	<td colspan=5>gridlike: squares/blocks</td>
+	<td colspan=2 rowspan=2>customizable (depending on objects used and if using modular ground)</td>
+	<td rowspan=2>mostly indoors</td>
+	<td rowspan=2>somewhat expansive but still claustrophobic</td>
+	<td rowspan=2>mostly on tight cooridoor ships, but one map outside in space</td>
+	<td rowspan=2>voxels</td>
+
+<td colspan=3 rowspan=2 id=a>outdoor landscaping/<br>terrain design</td>
+
+	<td rowspan=2>very natural/organic</td>
+	<td colspan=2 rowspan=2>mostly indoors or urban</td>
+	<td rowspan=2>layering</td>
+	<td></td>
+	<td></td>
+	<td rowspan=2>fractal; very natural/organic: deep canyons, flat plains, rolling hills, steep mountains</td>
+	<td rowspan=2>mostly urban</td>
+
+<td align=right colspan=3 rowspan=2 id=a>outdoor landscaping/<br>terrain design</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=2></td>
+	<td>triangles: more complexity, organic surfaces, smoother angles, arches, domes, vaulted ceilings, etc.</td>
+	<td colspan=2>more "organic [and] have shapes and complex surfaces"</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=4 id=a><a name=puzzles></a><a href=http://en.wikipedia.org/wiki/Puzzle class=l>puzzles</a></td>
+
+	<td colspan=3>find keys/items</td>
+	<td colspan=2>find items & combine</td>
+	<td colspan=2 rowspan=8>customizable</td>
+	<td rowspan=4>target airstrike</td>
+	<td rowspan=4>find keys/items</td>
+	<td rowspan=4>aim laser, lead repair "fireflies" to teleporter</td>
+	<td rowspan=4>find keys/items</td>
+
+<td colspan=3 rowspan=4 id=a>puzzles</td>
+
+	<td rowspan=4>find keycards</td>
+	<td colspan=2>breaking and entering, evade detection (sneak), find/steal items, follow/trail people, pick pockets</td>
+
+	<td rowspan=4>find keys/items
+		<li>pressure-sensitive floors/walls</td>
+
+	<td rowspan=4>find items</td>
+	<td colspan=2></td>
+	<td rowspan=4>breaking and entering, evade detection (sneak), find keys/items</td>
+
+<td align=right colspan=3 rowspan=4 id=a>puzzles</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=4>ordered levers/switches, pressure-sensitive floors, timed doors/levers</td>
+	<td></td>
+	<td rowspan=3>kidnapping, plant evidence</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td>gears</td>
+	<td colspan=3>break walls</td>
+
+	<tr valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=3></td>
+	<td><center>directional (compass), levers and fulcrums, mechanical scarab beetle, raiseable platforms/blocks, ropes and pulleys, rotating hubs, shooting, switches (hanging, holed), tripwires, wheels</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=4 id=a><a name=traps></a><a href=http://en.wikipedia.org/wiki/Trap class=l>traps</a>/<a href=http://en.wikipedia.org/wiki/Hazard class=l>hazards</a></td>
+
+	<td colspan=4>blades (floor, vertically swinging), fire, spikes (ceiling, floor, wall)</td>
+	<td rowspan=4>breaking metal walkways, fire, lasers</td>
+	<td rowspan=4>cold (freezers), electricity, heat (fire, steam), radiation</td>
+	<td rowspan=4>acid, closing sliding doors, gas (plant spores), rocks (falling & rolling), spiked cylinders (rolling)</td>
+	<td rowspan=4>plasma beams</td>
+	<td rowspan=4></td>
+
+<td colspan=3 rowspan=4 id=a>traps/hazards</td>
+
+	<td rowspan=4>falling stone walls/statues (triggered)</td>
+	<td rowspan=4>arrows (shooting), blades (horizontally/vertically swinging), fire, pressure-sensitive floors, mines</td>
+	<td rowspan=4></td>
+	<td rowspan=4>blades (track-spinning), darts (shooting), fire, floors (crumbling), lava, poison gas, rocks/rubble (falling), spikes (door, horizontally-triggered, swinging balls, vertically-falling), stone blocks (ceiling-/wall-crushing)</td>
+	<td rowspan=4>boulders (rolling), crumbling floors, lava, pressure-sensitive floors, spikes (bamboo-floor, wall)</td>
+	<td rowspan=4>arrows (shooting), blades (horizontally rotating/swinging), floors (crumbling), lava, spikes (ceiling/floor/wall)</td>
+	<td rowspan=4>decoy silos/walls, land mines, turrets</td>
+	<td rowspan=4>electricity, LAMs, poisonous gas/<a href=#water>water</a>, radiation, tripwires (lasers), turrets</td>
+
+<td align=right colspan=3 rowspan=4 id=a>traps/hazards</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=3>arrows (shooting), blades (+ rolling), boulders (rolling), darts (shooting), doors (split-shutting), floors (crumbling, falling-anchored), lava</td>
+	<td rowspan=3>balls (rolling), blades (+ horizontally rotating, "geared", & slicing; vertically: circle-spiraling & "scissors"), chains (swinging), fire (+ oil water), land mines, machineguns (+ flamethrower), poison, rocks (falling, horizontally crushing), spikes (+ ceiling spiral-expanding, diagonal, large "jacks"), stone block columns</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td rowspan=2>lightning bolts, Midas' golden hand, swords (falling), Thor's hammer</td>
+	<td colspan=2>crane (moving), fans, icicles/stalagmites (falling)</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td>acid/sewage, blades (+ horizontally swinging, statue-swinging), crates (swinging), glass (floor-vertical), mines (water), oil drums (rolling), sand bags (falling), snowballs (rolling), spikes (+ swinging balled)</td>
+	<td>barbed wire, blades (+ horizontally rotating), drills, electric fences, fire (+ swinging), lasers, mud, quicksand, poison, rocks (falling), spikes (+ crushing/rolling cylinders), statues (fire-emitting), subway trains</td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td valign=top colspan=3><a name=weapons></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=24>
+<th colspan=3 align=left><acronym onclick="toggleItem('weaponsTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=sword.gif width=24 height=24 border=0 align=absmiddle alt=Weapons> WEAPONS</th>
+<th colspan=7 id=w><img src=sword.gif width=24 height=24 border=0 align=absmiddle alt=Weapons> WEAPONS</th>
+<th colspan=6 id=w><img src=sword.gif width=24 height=24 border=0 align=absmiddle alt=Weapons> WEAPONS</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('weaponsTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=weaponsTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=4 id=a><a href=http://en.wikipedia.org/wiki/Weapon class=l>weapons</a></td>
+
+	<td colspan=4>guns (Colt pistols, shotgun, Uzis)</td>
+	<td rowspan=4>chloroform, cosh?, grappling hook gun, sniper rifle, truncheon?</td>
+	<td colspan=2 rowspan=4><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+	<td rowspan=4>C4, crossbow, crowbar, grenades, guns [alien wasp, gauss, Glock, gluon, Magnum .44, MP5 w/grenade launcher, rocket launcher (laser-guided), shotgun], laser trip bombs, "snarks" (alien hand grenades)
+		<li><acronym title="Opposing Force">OF</acronym>: guns [alien: barnacle grappling hook, displacer, shock roach (electricity), "fish", spore launcher; Desert Eagle .357 magnum w/laser-sight, M-249 SAW (squad assault weapon: machinegun)], M-40A1 sniper rifle, knife, pipe wrench, teleporter</td>
+
+	<td rowspan=4>axe, explosives (thermal detonator), guns (pistol, shotgun, Uzi), sling (rocks, explosive asteroid fragments, gas spore), swords (chainsaw: requires gas; flame, normal)</td>
+	<td rowspan=4>arc welder, compression rifle, crossbow, grenade launcher, IMOD (infinity modulator), phaser (+ rifle), Scavenger rifle, statis weapon, Tetryon Disruptor, Winchester rifle</td>
+	<td rowspan=4>flamethrower, grenade launcher, guns (HAWK-MK8, SLNT-B dartgun, others)</td>
+
+	<td colspan=3 rowspan=4 id=a>weapons</td>
+
+	<td rowspan=4>bat, guns [.22 Calico, .38 Special, .50 Barret rifle, AK-47, Benelli M1 Super 90 shotgun, Beretta 9mm, Browning .50 caliber machine gun, Desert Eagle .44 Magnum, Heckler and Koch (91, MP5 9mm, VP70 9mm), M-14, Mac-10 9mm, Ruger Redhawk .44 Magnum, S&W 686 .357 Magnum, SPAS 12, toxic gun, tranquilizer pistol & rifle], mace
+		<li><a href=http://ingennet.com/trespasser2000/wguide.html>more info & pics</a><br>
+<a href=http://web.archive.org/web/*/ingennet.com/trespasser2000/wguide.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>
+		<li>anything pickupable</td>
+
+	<td colspan=2>blackjack, bow (arrows: broadhead, fire, gas, moss, noise, rope, <a href=#water>water</a>), hammers, mines (explosive, gas)</td>
+	<td rowspan=4>axes (battle, flame, lightning), bows (energy, heavy, long, speed; arrows: explosive, ice, fire, magic, normal, poison), cleaver, clubs, crystals (fire, ice, lightning), hammers, maces, swords (flame, ice, scimitars, short, long)</td>
+	<td rowspan=4>guns (bazooka, pistol, rifles), hand grenades, machete, satchel charges, whip</td>
+	<td rowspan=4>bow (arrows: charm lights, death, explosion, fire, freeze, possession, wasp swarm), staff, swords</td>
+	<td rowspan=4>explosives (detonators, homing toys, mashers), <a href=../10six/ledos.html#weapons>weapons</a></td>
+	<td rowspan=4>baton, bazooka, crossbow (darts: normal, tranquilizer, flare), fire extingusher, flamethrower (napalm), grenades (EMP, gas), guns: 10mm pistol (+ stealth), assault, buckshot, guided explosive projectile (GEP), shotgun, sniper rifle; knife, lightweight attack munitions (LAMs), pepper spray, PS20 (plasma), riot prod, rocket launcher, swords (normal, Dragon's Tooth)</td>
+
+<td align=right colspan=3 rowspan=4 id=a>weapons</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td colspan=3>Magnums</td>
+	<td rowspan=3>crossbow (bolts: exploding, poisoned, normal), grenade launcher (+ grenades: normal, flash, super), revolver, shotgun (+ shells: wide & narrow arc), Uzis</td>
+	<td></td>
+	<td rowspan=3>bow (arrows: + vine-climbable), frogbeast eggs, Mechanist mace</td>
+
+	<tr valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td colspan=2><center>harpoon</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td>M-15/M-16</td>
+	<td>Desert Eagle, grenade/rocket launchers, MP5</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a>bullet holes</td>
+
+	<td colspan=5><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2><br></td>
+	<td colspan=2><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td>burn marks</td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>bullet holes</td>
+
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=3></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><br></td>
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+
+<td align=right colspan=3 id=a>bullet holes</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>bullet shells</td>
+
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+	<td colspan=3>eject, bounce off ground, make sound, then disappear
+		<li><a href=#water>water</a> ripples & splash</td>
+
+	<td colspan=2></td>
+	<td>eject, hit ground, make sound, then disappear</td>
+	<td colspan=2><br></td>
+	<td>eject, bounce off things, make sound, then disappear after a few seconds</td>
+
+	<td colspan=3 id=a>bullet shells</td>
+
+	<td>eject, bounce off things, make sound, then disappear after a few seconds</td>
+	<td colspan=5></td>
+	<td>eject, hit ground, make sound, roll around, then disappear after a few seconds</td>
+
+<td align=right colspan=3 id=a>bullet shells</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a>targeting</td>
+
+	<td colspan=3>automatic</td>
+	<td colspan=2>automatic & manual</td>
+	<td colspan=2><br></td>
+	<td colspan=2>automatic & manual</td>
+	<td colspan=2>manual</td>
+
+<td colspan=3 id=a>targeting</td>
+
+	<td colspan=4>manual</td>
+	<td>automatic</td>
+	<td></td>
+	<td>manual</td>
+
+	<td>automatic & manual
+		<li>accuracy increases longer reticule held over target</td>
+
+<td align=right colspan=3 id=a>targeting</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>other</td>
+
+	<td colspan=2></td>
+	<td>harpoons stick in ground, rocks, & walls (but disappear ~10 seconds later)</td>
+	<td colspan=8></td>
+
+<td colspan=3 id=a>other</td>
+
+	<td></td>
+	<td colspan=2>arrows stick in dirt/grass/wood; retrievable</td>
+	<td>arrows stick in <a href=#NPCs>animals/enemies</a> & dirt/grass/wood; retrievable (some may be broken)</td>
+	<td>whip weapons out of enemy hands</td>
+	<td colspan=2></td>
+	<td>darts & throwing knives stick in surfaces; retrievable</td>
+
+<td align=right colspan=3 id=a>other</td>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3><a name=npcs><a name=NPCs></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=15>
+<th colspan=3 align=left><acronym onclick="toggleItem('NPCsTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=people.gif width=20 height=15 border=0 align=absmiddle alt=NPCs> <a href=http://en.wikipedia.org/wiki/Non-player_character class=l>NPCs</a></th>
+<th colspan=7 id=w><img src=people.gif width=20 height=15 border=0 align=absmiddle alt=NPCs> NPCs</th>
+<th colspan=6 id=w><img src=people.gif width=20 height=15 border=0 align=absmiddle alt=NPCs> NPCs</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('NPCsTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=NPCsTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>animals/ enemies</td>
+
+	<td>alligators/ crocodiles, bats, bears, cats (cougars, lions, panthers), centaurs, demons, dinosaurs (Tyrannosaurus Rexes, Velocoraptors), gorillas, humans, mummies, rats, wolves</td>
+	<td>birds (crows, falcons), cats (leopards, tigers), dinosaurs (Tyrannosaurus Rexes, Velocoraptors), fish (barracuda, catfish, eels, sharks), dogs (Doberman Pinchers), dragon, humans, rats, spiders, Yeti</td>
+	<td>alligators/ crocodiles, bats, birds (buzzards/ vultures, crows), dinosaurs (compsognathus, Pterodactyl--TR3 Gold, Tyrannosaurus Rexes, Velocoraptors), dogs (German Shephards), fish (angelfish?, piranha), dolphins (TR3 Gold), humans, killer whales, lizard humanoids, monkeys, rats, snakes (Cobras, rattlesnakes), tigers, wasps</td>
+	<td>crocodiles, bats, bulls, elementals, humans, insects (locusts, beetles: flying & scarab, scorpions), jackals, monkeys, mummies, sharks (hammerhead), skeletons, sphinxes?, statues (ancient gods/creatures?, horses, knights), warthogs, wraiths</td>
+	<td>bats, dogs (Doberman Pincers, German Shepherds), humans, lions, rats, skeletons, statues, water wraith</td>
+	<td colspan=2></td>
+	<td>aliens, humans, zombies</td>
+	<td>aliens, birds (giant), shglieks (when mad), plants (arrow-shooting, eating, strangling vines)</td>
+	<td>aliens (harvesters, Scavengers: Borg, Hirogen, Klingons, Species 8472), humans</td>
+	<td>aliens, humans, gorgor, spiders, vulture-like birds, compos (large water plants), zeedog (canine-like animal), etc.</td>
+
+<td colspan=3 id=a>animals/ enemies</td>
+
+	<td><a href=http://ingennet.com/trespasser2000/dguide.html>dinosaurs</a> <a href=http://web.archive.org/web/*/ingennet.com/trespasser2000/dguide.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>: Albertosaurus, Brachiosaurus, Parasaurolophus, Stegosaurus, Triceratops, Tyrannosaurus Rexes, Velocoraptors</td>
+	<td>bug beasts, burricks (dog-lizards), fire (elementals, shadows--<a href=#thiefvs><i>Thief Gold</i></a>), frogs, ghosts, humans, mosquitoes, spiders, zombies</td>
+	<td>humans, mechanical droids (security & worker), tree humanoids</td>
+	<td>dragons, dragonflies, giants, goblins, humans, orcs, scavengers, spiders, succubi, trolls, wartoks</td>
+	<td>cheetah?, humans, ice monsters, leopards?, monkeys?, piranhas?, robot?, serpent god?, scorpions, sharks, snakes (Cobras), spiders?, wolves</td>
+	<td>djinni, humans, muck monster; >30 distinct types</td>
+	<td>other players, rovers</td>
+
+	<td>bots, dogs (some), doglike beasts, greasels, humans
+		<li>non-threatening: cats, dogs (some), fish, flies, rats, pigeons</td>
+
+<td align=right colspan=3 id=a>animals/ enemies</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=2 id=a><a name=ai><a href=http://en.wikipedia.org/wiki/Artificial_intelligence class=l>artificial intelligence (AI)</a></td>
+
+	<td colspan=2>attack immediately</td>
+
+	<td rowspan=2><li>animal pack behavior
+		<li>monkeys steal items
+		<li>gunshots scare away some animals?
+		<li>may run away when initially approached
+		<li>line-of-sight (sneak past some human enemies if they can't see <a href=#character>Lara</a> or are looking the other way)
+		<li>human: duck behind objects while shooting?, guard a certain object?, Nevada military police flee when shot and return with backup (SWAT team?)
+		<li>dinosaurs attack each other</td>
+
+	<td rowspan=2><li>mostly same abilities as Lara
+		<li>dodge? and evade
+		<li>guides light torches, kill scorpions & jackals
+		<li>some unkillable (bulls, end boss)
+		<li>some can be pushed off ledges (by bullet impact force), smashed?, or trapped?
+		<li>fire repels beetle swarms</td>
+
+	<td rowspan=2><li>Zap companion (aural only)
+		<li>sound-reactive?
+		<li>more environmental interaction: move furniture, sit down, sleep</td>
+
+	<td colspan=2 rowspan=2></td>
+
+	<td rowspan=2><li>creatures operate in packs
+		<li>will attempt to flank player
+		<li>distract player's attention
+		<li>throw explosives
+		<li>plant explosives to delay player
+		<li>fall back when injured
+		<li>interact with scenery (use static weapons, hide behind crates, etc)
+		<li>NPCs usable on player's side: security guards can fight with player and scientists can heal player; both can allow access to restricted areas
+		<li><acronym title="Opposing Force">OF</acronym>: fellow soldiers have engineering, heavy weapons, &/or medic abilities
+		<li>localized body damage</td>
+
+	<td rowspan=2><li>shglieks: distract (training area only?), knock unconcious, aggressive when hurt
+		<li>birds move out of <a href=#character>Julie</a>'s way
+		<li>cave claw hand can kill animals/enemies</td>
+
+	<td rowspan=2><li>attack immediately
+		<li>NPCs face <a href=#character>player character</a> if talking to</td>
+
+	<td rowspan=2>GAIA: <a href=http://www.appeal.be/products/page3/prod_ch3.htm>1</a> <a href=http://web.archive.org/web/*/www.appeal.be/products/page3/prod_ch3.htm><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>, <a href=http://www.outcast-game.com/english/html/in_behind_gaia.html>2</a> <a href=http://web.archive.org/web/*/www.outcast-game.com/english/html/in_behind_gaia.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+<td colspan=3 rowspan=2 id=a>artificial intelligence (AI)</td>
+
+	<td rowspan=2><li>dinosaurs attack each other
+		<li><a href=http://trespasser.com/ai.html>1</a> <a href=http://web.archive.org/web/*/trespasser.com/ai.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>/<a href=http://www.dreamworksgames.com/Games/Trespasser/features/htmls/ai.html>2</a> <a href=http://web.archive.org/web/*/www.dreamworksgames.com/Games/Trespasser/features/htmls/ai.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a></td>
+
+	<td rowspan=2><li>awareness degrees
+		<li>light-sensitive
+		<li>patrols
+		<li>sound-reactive
+		<li>call for backup & sound alarms
+		<li><a href=#thiefvs><i>Thief Gold</i></a>: zombies don't rebound instantly after severe damage</td>
+
+	<td rowspan=2><li>sentries no longer exhibit "frustrated" behavior: if a guard can't kill you for whatever reason, s/he'll run off to sound an alarm or get help
+		<li>pathfinding improved to mimic reality
+		<li>guards raise their awareness level if come across something out of place (like a knocked-over plate)?
+		<li>sentries relight extinguished torches from <a href=#character>Garrett</a>'s water arrows?</td>
+
+	<td rowspan=2><li>state-dependent defensive maneuvers
+		<li>line-of-sight
+		<li>sound-reactive</td>
+
+	<td rowspan=2><li>attack immediately
+		<li>gunshots scare away wolves (& leopards, monkeys?)</td>
+
+	<td rowspan=2></td>
+	<td rowspan=2>attack immediately</td>
+
+	<td rowspan=2><li>humans: all attack when one is attacked, distract by throwing objects near, fall back when injured, sound alarms, stand up if chair breaks, react when object thrown at them and when their objects are picked up or broken, notice spent ammo shell casings
+		<li>flies: gather around some dead bodies, follow trashbags if moved, dissipate when source object destroyed
+		<li>animals & cleaning bots: scurry out of player's way
+		<li>humans & med/repair bots: move when bumped into
+		<li>localized body damage</td>
+
+<td align=right colspan=3 rowspan=2 id=a>artificial intelligence (AI)</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>unharmed Buddhist monks fight enemies but turn on <a href=#character>Lara</a> if she shoots them</td>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=24>
+<th colspan=3 align=left><a name=inventory></a><acronym onclick="toggleItem('inventoryTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=backpack.gif width=24 height=24 border=0 align=absmiddle alt=Inventory> <a href=http://en.wikipedia.org/wiki/Inventory_(disambiguation) class=l>INVENTORY</a></th>
+<th colspan=7 id=w><img src=backpack.gif width=24 height=24 border=0 align=absmiddle alt=Inventory> INVENTORY</th>
+<th colspan=6 id=w><img src=backpack.gif width=24 height=24 border=0 align=absmiddle alt=Inventory> INVENTORY</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('inventoryTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=inventoryTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a>design</td>
+
+	<td colspan=3>passport & rings; store & use items</td>
+	<td colspan=2>store, combine, & use items</td>
+	<td colspan=2 rowspan=4></td>
+	<td></td>
+	<td>store & use items</td>
+	<td>hazard suit transporter buffer</td>
+	<td>store & use items</td>
+
+<td colspan=3 id=a>design</td>
+
+	<td>only 2 items at a time (1 stored, 1 in-hand)</td>
+	<td colspan=4>store & use items</td>
+	<td></td>
+	<td colspan=2>store & use items</td>
+
+<td align=right colspan=3 id=a>design</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=3 id=a><a name=inventory_items>items/ objects</td>
+
+	<td colspan=5>artifacts, flares, keys, weapons/ammo</td>
+	<td colspan=4>weapons/ammo</td>
+
+<td colspan=3 rowspan=3 id=a>items/ objects</td>
+
+	<td colspan=8>weapons/ammo</td>
+
+<td align=right colspan=3 rowspan=3 id=a>items/ objects</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td rowspan=2>bars (gold/lead), cogs, compass</td>
+	<td rowspan=2>chips, circuit boards/ breakers, fuse, gemstones, gong hammer, interruptors, keycards, masks, plaques, prayer scrolls, relay box</td>
+	<td rowspan=2>battery, discs, crowbar, embalming fluid, keycards, mallet, masks, penny, switch, ticket, winch starter</td>
+	<td rowspan=2>amulet of Horus, armor: (breast plate, gauntlets, greaves), bag of sand, binoculars (+ flashlight), broken handle, cartouches, compass, crowbar, gas can (jerrycan), gem, holy scriptures (sculptures?), hook, laser sight, metal blade, nitro, puzzle objects, scrap of paper, stones (Atum, Khepri, Maat, Re), token, torch, valve pipe, waterskins, wooden handle</td>
+	<td rowspan=2>aqualung, batteries, binoculars (+ flashlight), canisters (oxygen, nitrogen), chalk, chloroform, cloth, coin, crowbar, discs, fuse, gemstone pieces, hammer, keycards, Mercury stone, pitchfork, rubber tube, suit console, symbols, Timex TMX, valve wheel</td>
+
+	<td rowspan=2>hazard suit (+ damage & health sensors, flashlight)
+		<li><acronym title="Opposing Force">OF</acronym>: PCV vest (+ damage & health sensors, night vision)</td>
+
+	<td rowspan=2>health vials, gas cans, quest items, shields, Tiki runes, water ampules</td>
+	<td rowspan=2>hyposprays (normal, truth serum), tricorders</td>
+	<td rowspan=2>artifacts, beacon, binoculars, cloaker, holographic projector, hoti (fruit), keys, lexicon, notebook, plants, minerals</td>
+	<td rowspan=2>keycards, almost anything less than or equal to the size of a weapon</td>
+	<td colspan=2>compass, flash bombs, flasks/potions (breath, health, holy water, speed), <a href=http://home1.gte.net/wrhea/items.html>food</a> <a href=http://web.archive.org/web/*/home1.gte.net/wrhea/items.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a> (apples, bread, carrots, cheese, deer legs), lock picks, keys, papyrus/parchments/scrolls, <a href=http://home1.gte.net/wrhea/items.html>loot</a> <a href=http://web.archive.org/web/*/home1.gte.net/wrhea/items.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a> (coins: gold, silver; goblets, gold/gem vases, tiaras)</td>
+	<td rowspan=2>armor (leather, mail: banded, chain, plate), book (Atimar), crystals (Rift), potions (health, invisibility, invulnerability, life), keys, runes</td>
+	<td rowspan=2>chalk, lighter, machine parts, puzzle objects, treasure</td>
+	<td rowspan=2>potions (arrow invincibility, disguise, featherfall, flight, health, life extension, poison, strength, superjump)</td>
+	<td rowspan=2><a href=10six/ledos.html>LEDOs</a></td>
+	<td rowspan=2>see pickupable objects</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td></td>
+	<td>flares, loot (+ glass lenses, gold-rimmed glasses, jade staffs), potions (+ slowfall & invisible), scouting orbs</td>
+
+
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 rowspan=2 id=a><a name=map></a><a href=http://en.wikipedia.org/wiki/Map class=l>map</a></td>
+
+	<td colspan=4 rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td></td>
+	<td colspan=5 rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td rowspan=2>2D, 3 sizes (overlaid), rotates w/<a href=#camera>camera, zoom</a>; precise position</td>
+
+<td colspan=3 rowspan=2 id=a>map</td>
+
+	<td rowspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=2>2D, vague position</td>
+	<td rowspan=2>2D, automatically updates objectives; precise position</td>
+	<td rowspan=2>2D, overlaid, rotates w/camera (optional), zoom; precise position; hints</td>
+	<td rowspan=2></td>
+	<td rowspan=2>3D wireframe, limited radius; zoom levels; precise position</td>
+	<td rowspan=2>2D, no position</td>
+
+<td align=right colspan=3 rowspan=2 id=a>map</td>
+
+	<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td></td>
+	<td></td>
+	<td>add text/notes</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 id=a><a href=http://en.wikipedia.org/wiki/pick-up_(gaming) class=l>pickups</a></td>
+
+	<td colspan=2><a href=#sprite class=l>sprites</a></td>
+	<td colspan=3>3D objects</td>
+	<td colspan=2></td>
+	<td colspan=4>3D objects</td>
+
+<td colspan=3 id=a>pickups</td>
+
+	<td colspan=8>3D objects</td>
+
+<td align=right colspan=3 id=a>pickups</td>
+</tbody>
+
+
+<tr bgcolor=#333333 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#333333'; height=21>
+<th colspan=3 align=left><a name=other></a><acronym onclick="toggleItem('otherTbody')" class=l title=hide/show>[+/-]</acronym></th>
+<th colspan=9 id=w><img src=other.gif width=24 height=21 border=0 align=absmiddle alt=Other> OTHER</th>
+<th colspan=7 id=w><img src=other.gif width=24 height=21 border=0 align=absmiddle alt=Other> OTHER</th>
+<th colspan=6 id=w><img src=other.gif width=24 height=21 border=0 align=absmiddle alt=Other> OTHER</th>
+<th colspan=3 align=right><acronym onclick="toggleItem('otherTbody')" class=l title=hide/show>[+/-]</acronym></th>
+</tr>
+
+
+<tbody id=otherTbody>
+<tr align=center valign=top onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#80828c';><td align=left colspan=3 id=a><a name=multiplayer></a><a href=http://en.wikipedia.org/wiki/Multiplayer_game class=l>multiplayer</a></td>
+
+	<td colspan=5><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td colspan=3><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td colspan=3 id=a>multiplayer</td>
+
+	<td colspan=3><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td><img src=yes.gif alt=yes border=0 width=8 height=8></td>
+	<td colspan=2><img src=no.gif alt=no border=0 width=8 height=8></td>
+	<td>only</td>
+	<td><img src=no.gif alt=no border=0 width=8 height=8></td>
+
+<td align=right colspan=3 id=a>multiplayer</td>
+
+
+<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td align=left colspan=3 rowspan=3 id=a>sound</td>
+
+	<td colspan=5>stereo</td>
+	<td colspan=5>stereo</td>
+	<td rowspan=3></td>
+
+	<td colspan=3 rowspan=3 id=a>sound</td>
+
+	<td colspan=4>stereo</td>
+	<td></td>
+	<td colspan=3 rowspan=3>stereo</td>
+
+	<td align=right colspan=3 rowspan=3 id=a>sound</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=2></td>
+	<td colspan=3>no "oomph!" (run into something) and "aha" (pickup object)</td>
+	<td colspan=2 rowspan=2>one sound at a time</td>
+	<td colspan=2 rowspan=2><a href=http://en.wikipedia.org/wiki/A3D>A3D</a> & <a href=http://en.wikipedia.org/wiki/Environmental_audio_extensions>EAX</a></td>
+	<td rowspan=2>A3D</td>
+	<td rowspan=2>real-time <a href=http://en.wikipedia.org/wiki/Foley_(film_production)>Foley</a><br>(<a href=http://www.dreamworksgames.com/Games/Trespasser/features/htmls/sound.html>more info</a> <a href=http://web.archive.org/web/*/www.dreamworksgames.com/Games/Trespasser/features/htmls/sound.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine"></a>)</td>
+	<td rowspan=2><a href=#thiefvs><i>Thief Gold</i></a>: body drop & different food eating sounds</td>
+
+	<tr align=center valign=top bgcolor=#757781 onMouseOver=this.bgColor='#91939d'; onMouseOut=this.bgColor='#757781';><td colspan=2></td>
+	<td>no grandfather clock ticking in <a href=#character>Lara</a>'s mansion</td>
+	<td>roll replaced with dead body slump; no lava death sigh</td>
+	<td>binocular zoom; no vault or jump</td>
+</tbody>
+
+
+<tr align=center bgcolor=#000000 height=68>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../tr/tr1logo.gif alt="Tomb Raider" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../tr/tr2logo.gif alt="Tomb Raider II" border=0 width=73 height=28></a></td>
+<td><a href=../links.html><img src=../tr/tr3logo.gif alt="Tomb Raider III" border=0 width=82 height=54></td>
+<td><a href=../links.html><img src=../tr/trlrlogo.gif alt="Tomb Raider: The Last Revelation" border=0 width=91 height=39></a></td>
+<td><a href=../links.html><img src=../tr/trclogo.gif alt="Tomb Raider: Chronicles" border=0 width=91 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW2.xicon.gif alt="Active Worlds 2.2" border=0 width=48 height=48></a></td>
+<td><a href=../aw/><img src=../aw/AW3bicon.gif alt="Active Worlds 3" border=0 width=48 height=48></a></td>
+<td><a href=../links.html><img src=../half-life.gif alt=Half-Life border=0 width=65 height=65></a></td>
+<td><a href=../links.html><img src=../fakk2_logo.jpg alt="Heavy Metal: FAKK&sup2" border=0 width=67 height=50></a></td>
+<td><a href=../links.html><img src=../stvef.gif alt="Star Trek: Voyager - Elite Force" border=0 width=91 height=34></a></td>
+<td><a href=../links.html><img src=../outcast.jpg alt=Outcast border=0 width=143 height=44></a></td>
+<td colspan=3></td>
+<td><a href=../links.html><img src=../trespasser.gif alt=Trespasser border=0 width=128 height=10></a></td>
+<td><a href=../links.html><img src=../thief.jpg alt="Thief: The Dark Project" border=0 width=119 height=68></a></td>
+<td><a href=../links.html><img src=../thief2.jpg alt="Thief II: The Metal Age" border=0 width=119 height=62></a></td>
+<td><a href=../links.html><img src=../drakan.jpg alt="Drakan: Order of the Flame" border=0 width=128 height=42></a></td>
+<td><a href=../links.html><img src=../indy3d.gif alt="Indiana Jones and the Infernal Machine" border=0 width=105 height=31></a></td>
+<td><a href=../links.html><img src=../pop.gif alt="Prince of Persia 3D" border=0 width=117 height=64></a></td>
+<td><a href=../links.html><img src=../10six/10six.gif alt=10six border=0 width=100 height=64></a></td>
+<td><a href=../links.html><img src=../deusex.gif alt="Deus Ex" border=0 width=128 height=15></a></td>
+<td colspan=3></td>
+</tr>
+</table>
+
+
+<p><br><table align=center><tr><td><p><a name=thiefvs></a><table cellpadding=0 cellspacing=0 width=100%>
+<th align=left id=a><font size=+1><i>Thief</i> vs. <a href=http://en.wikipedia.org/wiki/Thief_Gold><i>Thief Gold</i></a></table>
+(by <a href=mailto:david.byron@yale.edu>David Byron</a>)
+
+<p><li>3 new huge missions: "The Downwind Thieves' Guild", "The Mages' Tower", "The Song of the Caverns"
+<li>bonus mission
+<li>Each talisman now has its own mission, due to the additions.
+<li>"The Lost City": Craymen removed, Mages added, return path added to the arena area for those who jump instead of extending the bridge.
+<li>"Cragscleft": Guards in prison cell block patrol more thoroughly and frequently.
+<li>"The Sword": A large new area was added to the mansion.
+<li>Brother Murus now voiced by <a href=http://en.wikipedia.org/wiki/Robin_Williams>Robin Williams</a>.
+<li>Added Fire shadows (new creature) to "Bonehoard" and "The Haunted Cathedral" to provide a source of fire crystals.
+<li>"Bonehoard": Textures changed to aid navigation, architecture modified for fire shadows.
+<li>"Return to the Cathedral": Propping the doors open no longer works.
+</table>
+
+
+<p><hr size=1 width=50%>
+
+
+<p><center><table><tr>
+<td class=a>
+<img src=../intro.gif alt=Introduction border=0 width=16 height=15> <a href=>Introduction</a><br>
+<img src=../news.gif alt=News/Updates border=0 width=16 height=16> <a href=./#news>News/Updates</a><br>
+<img src=../table.gif align=absmiddle alt="Comparison Table" border=0 width=16 height=16> Comparison Table<br>
+<img src=../medal.gif align=absmiddle alt="Honorable Mentions" border=0 width=16 height=16> <a href=mentions.html>Honorable Mentions</a><br>
+<img src=../links.gif alt=Links border=0 width=16 height=16> <a href=./#links>Links</a>
+
+<td class=a>
+<img src=engine.gif width=20 height=16 border=0 align=absmiddle alt=Engine> <a href=#header>Engine</a> &#149;
+<img src=character1.gif width=15 height=16 border=0 align=absmiddle alt="Player Character"> <a href=#character>Player Character</a> &#149;
+<img src=level.gif width=24 height=19 border=0 align=absmiddle alt="Level/World Design"> <a href=#design>Level/World Design</a> &#149;
+<img src=sword.gif width=24 height=24 border=0 align=absmiddle alt=Weapons> <a href=#weapons>Weapons</a> &#149;
+<img src=people.gif width=20 height=15 border=0 align=absmiddle alt=NPCs> <a href=#npcs>NPCs</a> &#149;
+<img src=backpack.gif width=24 height=24 border=0 align=absmiddle alt=Inventory> <a href=#inventory>Inventory</a> &#149;
+<img src=other.gif width=24 height=21 border=0 align=absmiddle alt=Other> <a href=#other>Other</a>
+</table>
+</center>
+
+<p><hr size=1>
+
+<table width=100%>
+<tr valign=bottom>
+<td width=25%><a href=table.html>^ Top</a><br>
+<a href=>< Back</a><br>
+
+<td><center><a href=../#copyright>&copy</a> 1998-2013 <a href=../>Eep&sup2</a>
+
+<td width=25% align=right><a href=http://web.archive.org/web/*/tnlc.com/eep/compare/table.html><img src=../wmicon1.gif align=absmiddle border=0 width=16 height=16 alt="Internet Archive Wayback Machine">
+</table>
+</body>
+</html>
